@@ -33,10 +33,11 @@ __result_label__=0
 def main():
     # Use a breakpoint in the code line below to debug your script.
     coordinate_list = []
-    coordinate_list_with_name = []
+    coordinate_list_with_name_ip = []
 
     imn_file = open("korea-100-router.imn", 'r')
     node_name = str()
+    ip_address = str()
     while True:
         line = imn_file.readline()
         if not line: break
@@ -44,18 +45,22 @@ def main():
         if "node" in line:
             if "nodes" not in line:
                 node_name = line.split(" ")[1]
+        if "interface eth0" in line:
+            line = imn_file.readline()
+            if "ip address" in line:
+                ip_address = line[13:].replace("\n", "")
         if "iconcoords" in line:
             x = line.split("{")[1].split(" ")[0]
             y = line.split("{")[1].split(" ")[1].split("}")[0]
 
             coords = list([float(x), float(y)])
-            coords2 = list([node_name, float(x), float(y)])
+            coords2 = list([node_name, float(x), float(y), ip_address])
             coordinate_list.append(coords)
-            coordinate_list_with_name.append(coords2)
+            coordinate_list_with_name_ip.append(coords2)
     imn_file.close()
 
     #print(coordinate_list)
-    #print(coordinate_list_with_name)
+    #print(coordinate_list_with_name_ip)
 
     X=np.array(coordinate_list[:])
     #print(X[:,0])
@@ -79,25 +84,35 @@ def main():
     global __result_list__
     #print (__result_list__)
 
-    coordinate_list_with_name_n_label=[]
+    coordinate_list_with_name_label_ip=[]
     idx_i=0
     for i in __result_list__:
         idx_j=0
-        for j in coordinate_list_with_name:
+        for j in coordinate_list_with_name_ip:
             if j[1] == i[0] and j[2] == i[1]:
-                coordinate_list_with_name_n_label.append([j[0], j[1], j[2], bin(i[2]).split("b")[1].zfill(5), i[3]])
-                del coordinate_list_with_name[idx_j]
+                coordinate_list_with_name_label_ip.append([j[0], j[1], j[2], bin(i[2]).split("b")[1].zfill(5), i[3], j[3]])
+                del coordinate_list_with_name_ip[idx_j]
             idx_j += 1
         idx_i += 1
 
-    coordinate_list_with_name_n_label.sort(key=lambda x:x[1])
+    coordinate_list_with_name_label_ip.sort(key=lambda x:x[1])
 
     #print("\n\n")
-    #print(coordinate_list_with_name_n_label)
+    #print(coordinate_list_with_name_label_ip)
 
     node_list_file = open("korea-100-router-node-list.txt", 'w')
-    for i in coordinate_list_with_name_n_label :
-        node_list_file.write(str(i[3])+","+bin(int(i[0].split("n")[1])).split("b")[1].zfill(10)+","+str(i[0])+","+str(i[1])+","+str(i[2])+","+str(i[4])+","+"\n")
+    centroid_list_file = open("korea-100-router-centroid-list.txt", 'w')
+    centroid_ip_list_file = open("korea-100-router-centroid-ip-list.txt", 'w')
+    for i in coordinate_list_with_name_label_ip :
+        if "centroid" in i[4]:
+            centroid_list_file.write(str(i[3])+","+bin(int(i[0].split("n")[1])).split("b")[1].zfill(8)+","+str(i[5])+","+str(i[0])+","+str(i[1])+","+str(i[2])+","+str(i[4])+"\n")
+            centroid_ip_list_file.write(str(i[5]).replace("/24", "")+"\n")
+        node_list_file.write(
+            str(i[3]) + "," + bin(int(i[0].split("n")[1])).split("b")[1].zfill(8) + "," + str(i[5]) + "," + str(
+                i[0]) + "," + str(i[1]) + "," + str(i[2]) + "," + str(i[4]) + "\n")
+
+    centroid_list_file.close()
+    centroid_ip_list_file.close()
     node_list_file.close()
 
     imn_file = open("korea-100-router.imn", 'r')
@@ -108,32 +123,34 @@ def main():
         line = imn_file.readline()
         if not line: break
 
-        for i in coordinate_list_with_name_n_label:
+        for i in coordinate_list_with_name_label_ip:
+            """
             if "nodes" in line :
                 line_split = line.split(" ")
                 if str("{"+i[0]) == line_split[5] :
-                    line_split[5] = "{"+i[3]+bin(int(i[0].split("n")[1])).split("b")[1].zfill(10)
+                    line_split[5] = "{"+i[3]+bin(int(i[0].split("n")[1])).split("b")[1].zfill(8)
                 if str(i[0]+"}\n") == line_split[6] :
-                    line_split[6] = i[3]+bin(int(i[0].split("n")[1])).split("b")[1].zfill(10)+"}\n"
+                    line_split[6] = i[3]+bin(int(i[0].split("n")[1])).split("b")[1].zfill(8)+"}\n"
                 line = "    "+line_split[4]+" "+line_split[5]+" "+line_split[6]
 
             elif "node" in line :
                 line_split = line.split(" ")
                 if i[0] == line_split[1] :
-                    line_split[1] = i[3]+bin(int(i[0].split("n")[1])).split("b")[1].zfill(10)
+                    line_split[1] = i[3]+bin(int(i[0].split("n")[1])).split("b")[1].zfill(8)
                 line = line_split[0]+" "+line_split[1]+" "+line_split[2]
-
-            elif "hostname" in line:
+            """
+            if "hostname" in line:
                 line_substr = line[10:]
                 if str(i[0]+"\n") == line_substr :
-                    line_substr = i[3]+bin(int(i[0].split("n")[1])).split("b")[1].zfill(10)+"\n"
+                    line_substr = i[3]+bin(int(i[0].split("n")[1])).split("b")[1].zfill(8)+"\n"
                 line = "\thostname "+line_substr
-
+            """
             elif "interface-peer" in line:
                 line_split = line.split(" ")
                 if str(i[0]+"}\n") == line_split[6]:
-                    line_split[6] = i[3]+bin(int(i[0].split("n")[1])).split("b")[1].zfill(10)+"}\n"
+                    line_split[6] = i[3]+bin(int(i[0].split("n")[1])).split("b")[1].zfill(8)+"}\n"
                 line = "    "+line_split[4]+" "+line_split[5]+" "+line_split[6]
+            """
         imn_file2.write(line)
     imn_file.close()
     imn_file2.close()

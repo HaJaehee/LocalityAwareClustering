@@ -3061,14 +3061,14 @@ canvas c1 {
 
 option global {
     interface_names no
-    ip_addresses no
+    ip_addresses yes
     ipv6_addresses no
-    node_labels no
+    node_labels yes
     link_labels yes
     show_api no
     background_images no
     annotations no
-    grid yes
+    grid no
     traffic_start 0
 }
 

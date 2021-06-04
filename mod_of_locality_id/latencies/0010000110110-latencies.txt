@@ -1,0 +1,960 @@
+PING 10.0.22.1 (10.0.22.1) 56(84) bytes of data.
+64 bytes from 10.0.22.1: icmp_seq=1 ttl=64 time=0.031 ms
+64 bytes from 10.0.22.1: icmp_seq=2 ttl=64 time=0.029 ms
+64 bytes from 10.0.22.1: icmp_seq=3 ttl=64 time=0.025 ms
+64 bytes from 10.0.22.1: icmp_seq=4 ttl=64 time=0.029 ms
+64 bytes from 10.0.22.1: icmp_seq=5 ttl=64 time=0.025 ms
+
+--- 10.0.22.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 415ms
+rtt min/avg/max/mdev = 0.025/0.027/0.031/0.007 ms
+PING 10.0.32.1 (10.0.32.1) 56(84) bytes of data.
+64 bytes from 10.0.32.1: icmp_seq=1 ttl=63 time=10.5 ms
+64 bytes from 10.0.32.1: icmp_seq=2 ttl=63 time=5.28 ms
+64 bytes from 10.0.32.1: icmp_seq=3 ttl=63 time=5.30 ms
+64 bytes from 10.0.32.1: icmp_seq=4 ttl=63 time=5.24 ms
+64 bytes from 10.0.32.1: icmp_seq=5 ttl=63 time=5.25 ms
+
+--- 10.0.32.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 5.240/6.329/10.563/2.117 ms
+PING 10.0.1.2 (10.0.1.2) 56(84) bytes of data.
+64 bytes from 10.0.1.2: icmp_seq=1 ttl=62 time=31.6 ms
+64 bytes from 10.0.1.2: icmp_seq=2 ttl=62 time=17.4 ms
+64 bytes from 10.0.1.2: icmp_seq=3 ttl=62 time=17.3 ms
+64 bytes from 10.0.1.2: icmp_seq=4 ttl=62 time=17.3 ms
+64 bytes from 10.0.1.2: icmp_seq=5 ttl=62 time=17.4 ms
+
+--- 10.0.1.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 17.329/20.239/31.695/5.728 ms
+PING 10.0.167.2 (10.0.167.2) 56(84) bytes of data.
+64 bytes from 10.0.167.2: icmp_seq=1 ttl=62 time=31.7 ms
+64 bytes from 10.0.167.2: icmp_seq=2 ttl=62 time=17.3 ms
+64 bytes from 10.0.167.2: icmp_seq=3 ttl=62 time=17.4 ms
+64 bytes from 10.0.167.2: icmp_seq=4 ttl=62 time=17.4 ms
+64 bytes from 10.0.167.2: icmp_seq=5 ttl=62 time=17.2 ms
+
+--- 10.0.167.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 17.290/20.256/31.767/5.758 ms
+PING 10.0.14.2 (10.0.14.2) 56(84) bytes of data.
+64 bytes from 10.0.14.2: icmp_seq=1 ttl=62 time=19.4 ms
+64 bytes from 10.0.14.2: icmp_seq=2 ttl=62 time=17.3 ms
+64 bytes from 10.0.14.2: icmp_seq=3 ttl=62 time=17.4 ms
+64 bytes from 10.0.14.2: icmp_seq=4 ttl=62 time=17.4 ms
+64 bytes from 10.0.14.2: icmp_seq=5 ttl=62 time=17.4 ms
+
+--- 10.0.14.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 17.346/17.812/19.463/0.826 ms
+PING 10.0.169.2 (10.0.169.2) 56(84) bytes of data.
+64 bytes from 10.0.169.2: icmp_seq=1 ttl=63 time=9.43 ms
+64 bytes from 10.0.169.2: icmp_seq=2 ttl=63 time=6.26 ms
+64 bytes from 10.0.169.2: icmp_seq=3 ttl=63 time=6.29 ms
+64 bytes from 10.0.169.2: icmp_seq=4 ttl=63 time=6.25 ms
+64 bytes from 10.0.169.2: icmp_seq=5 ttl=63 time=6.23 ms
+
+--- 10.0.169.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 6.235/6.897/9.438/1.270 ms
+PING 10.0.0.2 (10.0.0.2) 56(84) bytes of data.
+64 bytes from 10.0.0.2: icmp_seq=1 ttl=63 time=5.39 ms
+64 bytes from 10.0.0.2: icmp_seq=2 ttl=63 time=4.28 ms
+64 bytes from 10.0.0.2: icmp_seq=3 ttl=63 time=4.25 ms
+64 bytes from 10.0.0.2: icmp_seq=4 ttl=63 time=4.22 ms
+64 bytes from 10.0.0.2: icmp_seq=5 ttl=63 time=4.21 ms
+
+--- 10.0.0.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 4.215/4.473/5.394/0.468 ms
+PING 10.0.151.2 (10.0.151.2) 56(84) bytes of data.
+64 bytes from 10.0.151.2: icmp_seq=1 ttl=62 time=19.5 ms
+64 bytes from 10.0.151.2: icmp_seq=2 ttl=62 time=15.2 ms
+64 bytes from 10.0.151.2: icmp_seq=3 ttl=62 time=15.3 ms
+64 bytes from 10.0.151.2: icmp_seq=4 ttl=62 time=15.4 ms
+64 bytes from 10.0.151.2: icmp_seq=5 ttl=62 time=15.4 ms
+
+--- 10.0.151.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 15.275/16.207/19.580/1.694 ms
+PING 10.0.10.2 (10.0.10.2) 56(84) bytes of data.
+64 bytes from 10.0.10.2: icmp_seq=1 ttl=62 time=23.5 ms
+64 bytes from 10.0.10.2: icmp_seq=2 ttl=62 time=19.3 ms
+64 bytes from 10.0.10.2: icmp_seq=3 ttl=62 time=19.4 ms
+64 bytes from 10.0.10.2: icmp_seq=4 ttl=62 time=19.4 ms
+64 bytes from 10.0.10.2: icmp_seq=5 ttl=62 time=19.3 ms
+
+--- 10.0.10.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 19.357/20.225/23.557/1.666 ms
+PING 10.0.24.1 (10.0.24.1) 56(84) bytes of data.
+64 bytes from 10.0.24.1: icmp_seq=1 ttl=62 time=19.5 ms
+64 bytes from 10.0.24.1: icmp_seq=2 ttl=62 time=15.4 ms
+64 bytes from 10.0.24.1: icmp_seq=3 ttl=62 time=15.3 ms
+64 bytes from 10.0.24.1: icmp_seq=4 ttl=62 time=15.4 ms
+64 bytes from 10.0.24.1: icmp_seq=5 ttl=62 time=15.4 ms
+
+--- 10.0.24.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 15.392/16.233/19.502/1.640 ms
+PING 10.0.5.2 (10.0.5.2) 56(84) bytes of data.
+64 bytes from 10.0.5.2: icmp_seq=1 ttl=62 time=23.5 ms
+64 bytes from 10.0.5.2: icmp_seq=2 ttl=62 time=19.4 ms
+64 bytes from 10.0.5.2: icmp_seq=3 ttl=62 time=19.4 ms
+64 bytes from 10.0.5.2: icmp_seq=4 ttl=62 time=19.4 ms
+64 bytes from 10.0.5.2: icmp_seq=5 ttl=62 time=19.3 ms
+
+--- 10.0.5.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 19.371/20.236/23.516/1.644 ms
+PING 10.0.28.1 (10.0.28.1) 56(84) bytes of data.
+64 bytes from 10.0.28.1: icmp_seq=1 ttl=62 time=10.5 ms
+64 bytes from 10.0.28.1: icmp_seq=2 ttl=62 time=7.38 ms
+64 bytes from 10.0.28.1: icmp_seq=3 ttl=62 time=7.33 ms
+64 bytes from 10.0.28.1: icmp_seq=4 ttl=62 time=7.43 ms
+64 bytes from 10.0.28.1: icmp_seq=5 ttl=62 time=7.42 ms
+
+--- 10.0.28.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 7.334/8.030/10.584/1.278 ms
+PING 10.0.2.2 (10.0.2.2) 56(84) bytes of data.
+64 bytes from 10.0.2.2: icmp_seq=1 ttl=63 time=11.2 ms
+64 bytes from 10.0.2.2: icmp_seq=2 ttl=63 time=11.2 ms
+64 bytes from 10.0.2.2: icmp_seq=3 ttl=63 time=11.2 ms
+64 bytes from 10.0.2.2: icmp_seq=4 ttl=63 time=11.2 ms
+64 bytes from 10.0.2.2: icmp_seq=5 ttl=63 time=11.2 ms
+
+--- 10.0.2.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 11.231/11.268/11.298/0.071 ms
+PING 10.0.152.2 (10.0.152.2) 56(84) bytes of data.
+64 bytes from 10.0.152.2: icmp_seq=1 ttl=62 time=17.4 ms
+64 bytes from 10.0.152.2: icmp_seq=2 ttl=62 time=14.4 ms
+64 bytes from 10.0.152.2: icmp_seq=3 ttl=62 time=14.3 ms
+64 bytes from 10.0.152.2: icmp_seq=4 ttl=62 time=14.4 ms
+64 bytes from 10.0.152.2: icmp_seq=5 ttl=62 time=14.4 ms
+
+--- 10.0.152.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 14.373/15.023/17.494/1.240 ms
+PING 10.0.177.1 (10.0.177.1) 56(84) bytes of data.
+64 bytes from 10.0.177.1: icmp_seq=1 ttl=62 time=12.4 ms
+64 bytes from 10.0.177.1: icmp_seq=2 ttl=62 time=8.37 ms
+64 bytes from 10.0.177.1: icmp_seq=3 ttl=62 time=8.42 ms
+64 bytes from 10.0.177.1: icmp_seq=4 ttl=62 time=8.38 ms
+64 bytes from 10.0.177.1: icmp_seq=5 ttl=62 time=8.40 ms
+
+--- 10.0.177.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 8.379/9.206/12.437/1.615 ms
+PING 10.0.68.1 (10.0.68.1) 56(84) bytes of data.
+64 bytes from 10.0.68.1: icmp_seq=1 ttl=62 time=27.4 ms
+64 bytes from 10.0.68.1: icmp_seq=2 ttl=62 time=21.4 ms
+64 bytes from 10.0.68.1: icmp_seq=3 ttl=62 time=21.3 ms
+64 bytes from 10.0.68.1: icmp_seq=4 ttl=62 time=21.3 ms
+64 bytes from 10.0.68.1: icmp_seq=5 ttl=62 time=21.4 ms
+
+--- 10.0.68.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 21.300/22.591/27.427/2.418 ms
+PING 10.0.35.1 (10.0.35.1) 56(84) bytes of data.
+64 bytes from 10.0.35.1: icmp_seq=1 ttl=61 time=32.8 ms
+64 bytes from 10.0.35.1: icmp_seq=2 ttl=61 time=18.5 ms
+64 bytes from 10.0.35.1: icmp_seq=3 ttl=61 time=18.5 ms
+64 bytes from 10.0.35.1: icmp_seq=4 ttl=61 time=18.5 ms
+64 bytes from 10.0.35.1: icmp_seq=5 ttl=61 time=18.4 ms
+
+--- 10.0.35.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 403ms
+rtt min/avg/max/mdev = 18.496/21.388/32.811/5.712 ms
+PING 10.0.165.2 (10.0.165.2) 56(84) bytes of data.
+64 bytes from 10.0.165.2: icmp_seq=1 ttl=61 time=22.6 ms
+64 bytes from 10.0.165.2: icmp_seq=2 ttl=61 time=18.5 ms
+64 bytes from 10.0.165.2: icmp_seq=3 ttl=61 time=18.5 ms
+64 bytes from 10.0.165.2: icmp_seq=4 ttl=61 time=18.8 ms
+64 bytes from 10.0.165.2: icmp_seq=5 ttl=61 time=18.5 ms
+
+--- 10.0.165.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 403ms
+rtt min/avg/max/mdev = 18.542/19.439/22.664/1.615 ms
+PING 10.0.59.1 (10.0.59.1) 56(84) bytes of data.
+64 bytes from 10.0.59.1: icmp_seq=1 ttl=61 time=35.6 ms
+64 bytes from 10.0.59.1: icmp_seq=2 ttl=61 time=23.5 ms
+64 bytes from 10.0.59.1: icmp_seq=3 ttl=61 time=23.5 ms
+64 bytes from 10.0.59.1: icmp_seq=4 ttl=61 time=23.5 ms
+64 bytes from 10.0.59.1: icmp_seq=5 ttl=61 time=23.4 ms
+
+--- 10.0.59.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 403ms
+rtt min/avg/max/mdev = 23.476/25.943/35.666/4.861 ms
+PING 10.0.45.1 (10.0.45.1) 56(84) bytes of data.
+64 bytes from 10.0.45.1: icmp_seq=1 ttl=61 time=24.8 ms
+64 bytes from 10.0.45.1: icmp_seq=2 ttl=61 time=14.3 ms
+64 bytes from 10.0.45.1: icmp_seq=3 ttl=61 time=14.5 ms
+64 bytes from 10.0.45.1: icmp_seq=4 ttl=61 time=14.5 ms
+64 bytes from 10.0.45.1: icmp_seq=5 ttl=61 time=14.4 ms
+
+--- 10.0.45.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 403ms
+rtt min/avg/max/mdev = 14.397/16.550/24.811/4.132 ms
+PING 10.0.48.1 (10.0.48.1) 56(84) bytes of data.
+64 bytes from 10.0.48.1: icmp_seq=1 ttl=61 time=14.6 ms
+64 bytes from 10.0.48.1: icmp_seq=2 ttl=61 time=13.5 ms
+64 bytes from 10.0.48.1: icmp_seq=3 ttl=61 time=13.4 ms
+64 bytes from 10.0.48.1: icmp_seq=4 ttl=61 time=13.4 ms
+64 bytes from 10.0.48.1: icmp_seq=5 ttl=61 time=13.5 ms
+
+--- 10.0.48.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 401ms
+rtt min/avg/max/mdev = 13.458/13.732/14.639/0.467 ms
+PING 10.0.162.2 (10.0.162.2) 56(84) bytes of data.
+64 bytes from 10.0.162.2: icmp_seq=1 ttl=61 time=20.6 ms
+64 bytes from 10.0.162.2: icmp_seq=2 ttl=61 time=17.5 ms
+64 bytes from 10.0.162.2: icmp_seq=3 ttl=61 time=17.5 ms
+64 bytes from 10.0.162.2: icmp_seq=4 ttl=61 time=17.5 ms
+64 bytes from 10.0.162.2: icmp_seq=5 ttl=61 time=17.5 ms
+
+--- 10.0.162.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 403ms
+rtt min/avg/max/mdev = 17.502/18.154/20.636/1.252 ms
+PING 10.0.31.1 (10.0.31.1) 56(84) bytes of data.
+64 bytes from 10.0.31.1: icmp_seq=1 ttl=61 time=16.6 ms
+64 bytes from 10.0.31.1: icmp_seq=2 ttl=61 time=15.5 ms
+64 bytes from 10.0.31.1: icmp_seq=3 ttl=61 time=15.3 ms
+64 bytes from 10.0.31.1: icmp_seq=4 ttl=61 time=15.5 ms
+64 bytes from 10.0.31.1: icmp_seq=5 ttl=61 time=15.4 ms
+
+--- 10.0.31.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 15.347/15.708/16.615/0.479 ms
+PING 10.0.182.1 (10.0.182.1) 56(84) bytes of data.
+64 bytes from 10.0.182.1: icmp_seq=1 ttl=61 time=23.6 ms
+64 bytes from 10.0.182.1: icmp_seq=2 ttl=61 time=21.5 ms
+64 bytes from 10.0.182.1: icmp_seq=3 ttl=61 time=21.5 ms
+64 bytes from 10.0.182.1: icmp_seq=4 ttl=61 time=21.4 ms
+64 bytes from 10.0.182.1: icmp_seq=5 ttl=61 time=21.5 ms
+
+--- 10.0.182.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 403ms
+rtt min/avg/max/mdev = 21.438/21.940/23.644/0.872 ms
+PING 10.0.49.1 (10.0.49.1) 56(84) bytes of data.
+64 bytes from 10.0.49.1: icmp_seq=1 ttl=61 time=20.5 ms
+64 bytes from 10.0.49.1: icmp_seq=2 ttl=61 time=17.5 ms
+64 bytes from 10.0.49.1: icmp_seq=3 ttl=61 time=17.5 ms
+64 bytes from 10.0.49.1: icmp_seq=4 ttl=61 time=17.5 ms
+64 bytes from 10.0.49.1: icmp_seq=5 ttl=61 time=17.4 ms
+
+--- 10.0.49.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 403ms
+rtt min/avg/max/mdev = 17.498/18.136/20.545/1.216 ms
+PING 10.0.55.1 (10.0.55.1) 56(84) bytes of data.
+64 bytes from 10.0.55.1: icmp_seq=1 ttl=61 time=23.5 ms
+64 bytes from 10.0.55.1: icmp_seq=2 ttl=61 time=21.5 ms
+64 bytes from 10.0.55.1: icmp_seq=3 ttl=61 time=21.4 ms
+64 bytes from 10.0.55.1: icmp_seq=4 ttl=61 time=21.5 ms
+64 bytes from 10.0.55.1: icmp_seq=5 ttl=61 time=21.5 ms
+
+--- 10.0.55.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 21.466/21.937/23.586/0.825 ms
+PING 10.0.161.2 (10.0.161.2) 56(84) bytes of data.
+64 bytes from 10.0.161.2: icmp_seq=1 ttl=61 time=16.6 ms
+64 bytes from 10.0.161.2: icmp_seq=2 ttl=61 time=15.5 ms
+64 bytes from 10.0.161.2: icmp_seq=3 ttl=61 time=15.5 ms
+64 bytes from 10.0.161.2: icmp_seq=4 ttl=61 time=15.5 ms
+64 bytes from 10.0.161.2: icmp_seq=5 ttl=61 time=15.5 ms
+
+--- 10.0.161.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 403ms
+rtt min/avg/max/mdev = 15.527/15.764/16.649/0.456 ms
+PING 10.0.44.1 (10.0.44.1) 56(84) bytes of data.
+64 bytes from 10.0.44.1: icmp_seq=1 ttl=61 time=16.6 ms
+64 bytes from 10.0.44.1: icmp_seq=2 ttl=61 time=14.5 ms
+64 bytes from 10.0.44.1: icmp_seq=3 ttl=61 time=14.4 ms
+64 bytes from 10.0.44.1: icmp_seq=4 ttl=61 time=14.3 ms
+64 bytes from 10.0.44.1: icmp_seq=5 ttl=61 time=14.4 ms
+
+--- 10.0.44.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 14.398/14.895/16.621/0.874 ms
+PING 10.0.55.2 (10.0.55.2) 56(84) bytes of data.
+64 bytes from 10.0.55.2: icmp_seq=1 ttl=62 time=19.3 ms
+64 bytes from 10.0.55.2: icmp_seq=2 ttl=62 time=19.4 ms
+64 bytes from 10.0.55.2: icmp_seq=3 ttl=62 time=19.3 ms
+64 bytes from 10.0.55.2: icmp_seq=4 ttl=62 time=19.4 ms
+64 bytes from 10.0.55.2: icmp_seq=5 ttl=62 time=19.4 ms
+
+--- 10.0.55.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 19.317/19.384/19.421/0.041 ms
+PING 10.0.39.1 (10.0.39.1) 56(84) bytes of data.
+64 bytes from 10.0.39.1: icmp_seq=1 ttl=61 time=18.5 ms
+64 bytes from 10.0.39.1: icmp_seq=2 ttl=61 time=16.5 ms
+64 bytes from 10.0.39.1: icmp_seq=3 ttl=61 time=16.5 ms
+64 bytes from 10.0.39.1: icmp_seq=4 ttl=61 time=16.5 ms
+64 bytes from 10.0.39.1: icmp_seq=5 ttl=61 time=16.2 ms
+
+--- 10.0.39.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 403ms
+rtt min/avg/max/mdev = 16.260/16.894/18.588/0.865 ms
+PING 10.0.42.1 (10.0.42.1) 56(84) bytes of data.
+64 bytes from 10.0.42.1: icmp_seq=1 ttl=61 time=22.6 ms
+64 bytes from 10.0.42.1: icmp_seq=2 ttl=61 time=17.5 ms
+64 bytes from 10.0.42.1: icmp_seq=3 ttl=61 time=17.5 ms
+64 bytes from 10.0.42.1: icmp_seq=4 ttl=61 time=17.4 ms
+64 bytes from 10.0.42.1: icmp_seq=5 ttl=61 time=17.5 ms
+
+--- 10.0.42.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 403ms
+rtt min/avg/max/mdev = 17.454/18.552/22.603/2.026 ms
+PING 10.0.46.1 (10.0.46.1) 56(84) bytes of data.
+64 bytes from 10.0.46.1: icmp_seq=1 ttl=61 time=20.5 ms
+64 bytes from 10.0.46.1: icmp_seq=2 ttl=61 time=16.5 ms
+64 bytes from 10.0.46.1: icmp_seq=3 ttl=61 time=16.4 ms
+64 bytes from 10.0.46.1: icmp_seq=4 ttl=61 time=16.5 ms
+64 bytes from 10.0.46.1: icmp_seq=5 ttl=61 time=16.5 ms
+
+--- 10.0.46.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 16.483/17.315/20.514/1.599 ms
+PING 10.0.22.1 (10.0.22.1) 56(84) bytes of data.
+64 bytes from 10.0.22.1: icmp_seq=1 ttl=64 time=0.037 ms
+64 bytes from 10.0.22.1: icmp_seq=2 ttl=64 time=0.033 ms
+64 bytes from 10.0.22.1: icmp_seq=3 ttl=64 time=0.025 ms
+64 bytes from 10.0.22.1: icmp_seq=4 ttl=64 time=0.025 ms
+64 bytes from 10.0.22.1: icmp_seq=5 ttl=64 time=0.026 ms
+
+--- 10.0.22.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 418ms
+rtt min/avg/max/mdev = 0.025/0.029/0.037/0.006 ms
+PING 10.0.32.1 (10.0.32.1) 56(84) bytes of data.
+64 bytes from 10.0.32.1: icmp_seq=1 ttl=63 time=5.22 ms
+64 bytes from 10.0.32.1: icmp_seq=2 ttl=63 time=5.26 ms
+64 bytes from 10.0.32.1: icmp_seq=3 ttl=63 time=5.29 ms
+64 bytes from 10.0.32.1: icmp_seq=4 ttl=63 time=5.23 ms
+64 bytes from 10.0.32.1: icmp_seq=5 ttl=63 time=5.27 ms
+
+--- 10.0.32.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 401ms
+rtt min/avg/max/mdev = 5.228/5.259/5.297/0.095 ms
+PING 10.0.1.2 (10.0.1.2) 56(84) bytes of data.
+64 bytes from 10.0.1.2: icmp_seq=1 ttl=62 time=17.4 ms
+64 bytes from 10.0.1.2: icmp_seq=2 ttl=62 time=17.4 ms
+64 bytes from 10.0.1.2: icmp_seq=3 ttl=62 time=17.4 ms
+64 bytes from 10.0.1.2: icmp_seq=4 ttl=62 time=17.3 ms
+64 bytes from 10.0.1.2: icmp_seq=5 ttl=62 time=17.4 ms
+
+--- 10.0.1.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 17.376/17.411/17.426/0.167 ms
+PING 10.0.167.2 (10.0.167.2) 56(84) bytes of data.
+64 bytes from 10.0.167.2: icmp_seq=1 ttl=62 time=17.4 ms
+64 bytes from 10.0.167.2: icmp_seq=2 ttl=62 time=17.4 ms
+64 bytes from 10.0.167.2: icmp_seq=3 ttl=62 time=17.2 ms
+64 bytes from 10.0.167.2: icmp_seq=4 ttl=62 time=17.3 ms
+64 bytes from 10.0.167.2: icmp_seq=5 ttl=62 time=17.3 ms
+
+--- 10.0.167.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 17.287/17.377/17.452/0.176 ms
+PING 10.0.14.2 (10.0.14.2) 56(84) bytes of data.
+64 bytes from 10.0.14.2: icmp_seq=1 ttl=62 time=17.3 ms
+64 bytes from 10.0.14.2: icmp_seq=2 ttl=62 time=17.4 ms
+64 bytes from 10.0.14.2: icmp_seq=3 ttl=62 time=17.3 ms
+64 bytes from 10.0.14.2: icmp_seq=4 ttl=62 time=17.4 ms
+64 bytes from 10.0.14.2: icmp_seq=5 ttl=62 time=17.4 ms
+
+--- 10.0.14.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 17.361/17.396/17.424/0.146 ms
+PING 10.0.169.2 (10.0.169.2) 56(84) bytes of data.
+64 bytes from 10.0.169.2: icmp_seq=1 ttl=63 time=6.27 ms
+64 bytes from 10.0.169.2: icmp_seq=2 ttl=63 time=6.26 ms
+64 bytes from 10.0.169.2: icmp_seq=3 ttl=63 time=6.26 ms
+64 bytes from 10.0.169.2: icmp_seq=4 ttl=63 time=6.26 ms
+64 bytes from 10.0.169.2: icmp_seq=5 ttl=63 time=6.30 ms
+
+--- 10.0.169.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 401ms
+rtt min/avg/max/mdev = 6.262/6.275/6.307/0.101 ms
+PING 10.0.0.2 (10.0.0.2) 56(84) bytes of data.
+64 bytes from 10.0.0.2: icmp_seq=1 ttl=63 time=4.18 ms
+64 bytes from 10.0.0.2: icmp_seq=2 ttl=63 time=4.25 ms
+64 bytes from 10.0.0.2: icmp_seq=3 ttl=63 time=4.28 ms
+64 bytes from 10.0.0.2: icmp_seq=4 ttl=63 time=4.27 ms
+64 bytes from 10.0.0.2: icmp_seq=5 ttl=63 time=4.28 ms
+
+--- 10.0.0.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 401ms
+rtt min/avg/max/mdev = 4.185/4.258/4.289/0.056 ms
+PING 10.0.151.2 (10.0.151.2) 56(84) bytes of data.
+64 bytes from 10.0.151.2: icmp_seq=1 ttl=62 time=15.4 ms
+64 bytes from 10.0.151.2: icmp_seq=2 ttl=62 time=15.4 ms
+64 bytes from 10.0.151.2: icmp_seq=3 ttl=62 time=15.3 ms
+64 bytes from 10.0.151.2: icmp_seq=4 ttl=62 time=15.4 ms
+64 bytes from 10.0.151.2: icmp_seq=5 ttl=62 time=15.4 ms
+
+--- 10.0.151.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 15.365/15.419/15.461/0.160 ms
+PING 10.0.10.2 (10.0.10.2) 56(84) bytes of data.
+64 bytes from 10.0.10.2: icmp_seq=1 ttl=62 time=19.4 ms
+64 bytes from 10.0.10.2: icmp_seq=2 ttl=62 time=19.4 ms
+64 bytes from 10.0.10.2: icmp_seq=3 ttl=62 time=19.3 ms
+64 bytes from 10.0.10.2: icmp_seq=4 ttl=62 time=19.4 ms
+64 bytes from 10.0.10.2: icmp_seq=5 ttl=62 time=19.4 ms
+
+--- 10.0.10.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 19.377/19.413/19.454/0.127 ms
+PING 10.0.24.1 (10.0.24.1) 56(84) bytes of data.
+64 bytes from 10.0.24.1: icmp_seq=1 ttl=62 time=15.4 ms
+64 bytes from 10.0.24.1: icmp_seq=2 ttl=62 time=15.3 ms
+64 bytes from 10.0.24.1: icmp_seq=3 ttl=62 time=15.4 ms
+64 bytes from 10.0.24.1: icmp_seq=4 ttl=62 time=15.4 ms
+64 bytes from 10.0.24.1: icmp_seq=5 ttl=62 time=15.3 ms
+
+--- 10.0.24.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 15.361/15.405/15.439/0.028 ms
+PING 10.0.5.2 (10.0.5.2) 56(84) bytes of data.
+64 bytes from 10.0.5.2: icmp_seq=1 ttl=62 time=19.4 ms
+64 bytes from 10.0.5.2: icmp_seq=2 ttl=62 time=19.4 ms
+64 bytes from 10.0.5.2: icmp_seq=3 ttl=62 time=19.4 ms
+64 bytes from 10.0.5.2: icmp_seq=4 ttl=62 time=19.4 ms
+64 bytes from 10.0.5.2: icmp_seq=5 ttl=62 time=19.3 ms
+
+--- 10.0.5.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 19.394/19.404/19.414/0.152 ms
+PING 10.0.28.1 (10.0.28.1) 56(84) bytes of data.
+64 bytes from 10.0.28.1: icmp_seq=1 ttl=62 time=7.38 ms
+64 bytes from 10.0.28.1: icmp_seq=2 ttl=62 time=7.42 ms
+64 bytes from 10.0.28.1: icmp_seq=3 ttl=62 time=7.33 ms
+64 bytes from 10.0.28.1: icmp_seq=4 ttl=62 time=7.34 ms
+64 bytes from 10.0.28.1: icmp_seq=5 ttl=62 time=7.40 ms
+
+--- 10.0.28.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 7.333/7.378/7.425/0.100 ms
+PING 10.0.2.2 (10.0.2.2) 56(84) bytes of data.
+64 bytes from 10.0.2.2: icmp_seq=1 ttl=63 time=11.2 ms
+64 bytes from 10.0.2.2: icmp_seq=2 ttl=63 time=11.3 ms
+64 bytes from 10.0.2.2: icmp_seq=3 ttl=63 time=11.2 ms
+64 bytes from 10.0.2.2: icmp_seq=4 ttl=63 time=11.2 ms
+64 bytes from 10.0.2.2: icmp_seq=5 ttl=63 time=11.1 ms
+
+--- 10.0.2.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 401ms
+rtt min/avg/max/mdev = 11.196/11.263/11.303/0.123 ms
+PING 10.0.152.2 (10.0.152.2) 56(84) bytes of data.
+64 bytes from 10.0.152.2: icmp_seq=1 ttl=62 time=14.4 ms
+64 bytes from 10.0.152.2: icmp_seq=2 ttl=62 time=14.3 ms
+64 bytes from 10.0.152.2: icmp_seq=3 ttl=62 time=14.3 ms
+64 bytes from 10.0.152.2: icmp_seq=4 ttl=62 time=14.4 ms
+64 bytes from 10.0.152.2: icmp_seq=5 ttl=62 time=14.3 ms
+
+--- 10.0.152.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 14.365/14.395/14.433/0.079 ms
+PING 10.0.177.1 (10.0.177.1) 56(84) bytes of data.
+64 bytes from 10.0.177.1: icmp_seq=1 ttl=62 time=8.40 ms
+64 bytes from 10.0.177.1: icmp_seq=2 ttl=62 time=8.40 ms
+64 bytes from 10.0.177.1: icmp_seq=3 ttl=62 time=8.42 ms
+64 bytes from 10.0.177.1: icmp_seq=4 ttl=62 time=8.44 ms
+64 bytes from 10.0.177.1: icmp_seq=5 ttl=62 time=8.38 ms
+
+--- 10.0.177.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 8.388/8.413/8.440/0.017 ms
+PING 10.0.68.1 (10.0.68.1) 56(84) bytes of data.
+64 bytes from 10.0.68.1: icmp_seq=1 ttl=62 time=21.4 ms
+64 bytes from 10.0.68.1: icmp_seq=2 ttl=62 time=21.4 ms
+64 bytes from 10.0.68.1: icmp_seq=3 ttl=62 time=21.3 ms
+64 bytes from 10.0.68.1: icmp_seq=4 ttl=62 time=21.3 ms
+64 bytes from 10.0.68.1: icmp_seq=5 ttl=62 time=21.4 ms
+
+--- 10.0.68.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 21.307/21.391/21.444/0.166 ms
+PING 10.0.35.1 (10.0.35.1) 56(84) bytes of data.
+64 bytes from 10.0.35.1: icmp_seq=1 ttl=61 time=18.4 ms
+64 bytes from 10.0.35.1: icmp_seq=2 ttl=61 time=18.5 ms
+64 bytes from 10.0.35.1: icmp_seq=3 ttl=61 time=18.5 ms
+64 bytes from 10.0.35.1: icmp_seq=4 ttl=61 time=18.5 ms
+64 bytes from 10.0.35.1: icmp_seq=5 ttl=61 time=18.4 ms
+
+--- 10.0.35.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 18.434/18.505/18.575/0.177 ms
+PING 10.0.165.2 (10.0.165.2) 56(84) bytes of data.
+64 bytes from 10.0.165.2: icmp_seq=1 ttl=61 time=18.5 ms
+64 bytes from 10.0.165.2: icmp_seq=2 ttl=61 time=18.5 ms
+64 bytes from 10.0.165.2: icmp_seq=3 ttl=61 time=18.5 ms
+64 bytes from 10.0.165.2: icmp_seq=4 ttl=61 time=18.5 ms
+64 bytes from 10.0.165.2: icmp_seq=5 ttl=61 time=18.5 ms
+
+--- 10.0.165.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 18.515/18.532/18.553/0.172 ms
+PING 10.0.59.1 (10.0.59.1) 56(84) bytes of data.
+64 bytes from 10.0.59.1: icmp_seq=1 ttl=61 time=23.3 ms
+64 bytes from 10.0.59.1: icmp_seq=2 ttl=61 time=23.5 ms
+64 bytes from 10.0.59.1: icmp_seq=3 ttl=61 time=23.5 ms
+64 bytes from 10.0.59.1: icmp_seq=4 ttl=61 time=23.5 ms
+64 bytes from 10.0.59.1: icmp_seq=5 ttl=61 time=23.5 ms
+
+--- 10.0.59.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 23.339/23.499/23.566/0.159 ms
+PING 10.0.45.1 (10.0.45.1) 56(84) bytes of data.
+64 bytes from 10.0.45.1: icmp_seq=1 ttl=61 time=14.5 ms
+64 bytes from 10.0.45.1: icmp_seq=2 ttl=61 time=14.4 ms
+64 bytes from 10.0.45.1: icmp_seq=3 ttl=61 time=14.4 ms
+64 bytes from 10.0.45.1: icmp_seq=4 ttl=61 time=14.5 ms
+64 bytes from 10.0.45.1: icmp_seq=5 ttl=61 time=14.4 ms
+
+--- 10.0.45.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 14.483/14.509/14.562/0.134 ms
+PING 10.0.48.1 (10.0.48.1) 56(84) bytes of data.
+64 bytes from 10.0.48.1: icmp_seq=1 ttl=61 time=13.5 ms
+64 bytes from 10.0.48.1: icmp_seq=2 ttl=61 time=13.5 ms
+64 bytes from 10.0.48.1: icmp_seq=3 ttl=61 time=13.4 ms
+64 bytes from 10.0.48.1: icmp_seq=4 ttl=61 time=13.4 ms
+64 bytes from 10.0.48.1: icmp_seq=5 ttl=61 time=13.4 ms
+
+--- 10.0.48.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 13.444/13.497/13.560/0.048 ms
+PING 10.0.162.2 (10.0.162.2) 56(84) bytes of data.
+64 bytes from 10.0.162.2: icmp_seq=1 ttl=61 time=17.5 ms
+64 bytes from 10.0.162.2: icmp_seq=2 ttl=61 time=17.5 ms
+64 bytes from 10.0.162.2: icmp_seq=3 ttl=61 time=17.5 ms
+64 bytes from 10.0.162.2: icmp_seq=4 ttl=61 time=17.5 ms
+64 bytes from 10.0.162.2: icmp_seq=5 ttl=61 time=17.5 ms
+
+--- 10.0.162.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 403ms
+rtt min/avg/max/mdev = 17.523/17.539/17.565/0.119 ms
+PING 10.0.31.1 (10.0.31.1) 56(84) bytes of data.
+64 bytes from 10.0.31.1: icmp_seq=1 ttl=61 time=15.5 ms
+64 bytes from 10.0.31.1: icmp_seq=2 ttl=61 time=15.4 ms
+64 bytes from 10.0.31.1: icmp_seq=3 ttl=61 time=15.4 ms
+64 bytes from 10.0.31.1: icmp_seq=4 ttl=61 time=15.5 ms
+64 bytes from 10.0.31.1: icmp_seq=5 ttl=61 time=15.5 ms
+
+--- 10.0.31.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 15.484/15.512/15.545/0.113 ms
+PING 10.0.182.1 (10.0.182.1) 56(84) bytes of data.
+64 bytes from 10.0.182.1: icmp_seq=1 ttl=61 time=21.4 ms
+64 bytes from 10.0.182.1: icmp_seq=2 ttl=61 time=21.4 ms
+64 bytes from 10.0.182.1: icmp_seq=3 ttl=61 time=21.5 ms
+64 bytes from 10.0.182.1: icmp_seq=4 ttl=61 time=21.4 ms
+64 bytes from 10.0.182.1: icmp_seq=5 ttl=61 time=21.5 ms
+
+--- 10.0.182.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 21.437/21.490/21.548/0.103 ms
+PING 10.0.49.1 (10.0.49.1) 56(84) bytes of data.
+64 bytes from 10.0.49.1: icmp_seq=1 ttl=61 time=17.5 ms
+64 bytes from 10.0.49.1: icmp_seq=2 ttl=61 time=17.5 ms
+64 bytes from 10.0.49.1: icmp_seq=3 ttl=61 time=17.5 ms
+64 bytes from 10.0.49.1: icmp_seq=4 ttl=61 time=17.4 ms
+64 bytes from 10.0.49.1: icmp_seq=5 ttl=61 time=17.4 ms
+
+--- 10.0.49.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 403ms
+rtt min/avg/max/mdev = 17.490/17.517/17.542/0.168 ms
+PING 10.0.55.1 (10.0.55.1) 56(84) bytes of data.
+64 bytes from 10.0.55.1: icmp_seq=1 ttl=61 time=21.4 ms
+64 bytes from 10.0.55.1: icmp_seq=2 ttl=61 time=21.4 ms
+64 bytes from 10.0.55.1: icmp_seq=3 ttl=61 time=21.5 ms
+64 bytes from 10.0.55.1: icmp_seq=4 ttl=61 time=21.5 ms
+64 bytes from 10.0.55.1: icmp_seq=5 ttl=61 time=21.4 ms
+
+--- 10.0.55.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 21.408/21.497/21.564/0.192 ms
+PING 10.0.161.2 (10.0.161.2) 56(84) bytes of data.
+64 bytes from 10.0.161.2: icmp_seq=1 ttl=61 time=15.5 ms
+64 bytes from 10.0.161.2: icmp_seq=2 ttl=61 time=15.5 ms
+64 bytes from 10.0.161.2: icmp_seq=3 ttl=61 time=15.5 ms
+64 bytes from 10.0.161.2: icmp_seq=4 ttl=61 time=15.5 ms
+64 bytes from 10.0.161.2: icmp_seq=5 ttl=61 time=15.4 ms
+
+--- 10.0.161.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 403ms
+rtt min/avg/max/mdev = 15.446/15.525/15.556/0.142 ms
+PING 10.0.44.1 (10.0.44.1) 56(84) bytes of data.
+64 bytes from 10.0.44.1: icmp_seq=1 ttl=61 time=14.3 ms
+64 bytes from 10.0.44.1: icmp_seq=2 ttl=61 time=14.5 ms
+64 bytes from 10.0.44.1: icmp_seq=3 ttl=61 time=14.6 ms
+64 bytes from 10.0.44.1: icmp_seq=4 ttl=61 time=14.6 ms
+64 bytes from 10.0.44.1: icmp_seq=5 ttl=61 time=14.5 ms
+
+--- 10.0.44.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 403ms
+rtt min/avg/max/mdev = 14.388/14.542/14.669/0.161 ms
+PING 10.0.55.2 (10.0.55.2) 56(84) bytes of data.
+64 bytes from 10.0.55.2: icmp_seq=1 ttl=62 time=19.3 ms
+64 bytes from 10.0.55.2: icmp_seq=2 ttl=62 time=19.4 ms
+64 bytes from 10.0.55.2: icmp_seq=3 ttl=62 time=19.4 ms
+64 bytes from 10.0.55.2: icmp_seq=4 ttl=62 time=19.2 ms
+64 bytes from 10.0.55.2: icmp_seq=5 ttl=62 time=19.3 ms
+
+--- 10.0.55.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 19.242/19.364/19.446/0.111 ms
+PING 10.0.39.1 (10.0.39.1) 56(84) bytes of data.
+64 bytes from 10.0.39.1: icmp_seq=1 ttl=61 time=16.5 ms
+64 bytes from 10.0.39.1: icmp_seq=2 ttl=61 time=16.5 ms
+64 bytes from 10.0.39.1: icmp_seq=3 ttl=61 time=16.5 ms
+64 bytes from 10.0.39.1: icmp_seq=4 ttl=61 time=16.5 ms
+64 bytes from 10.0.39.1: icmp_seq=5 ttl=61 time=16.4 ms
+
+--- 10.0.39.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 403ms
+rtt min/avg/max/mdev = 16.483/16.527/16.575/0.143 ms
+PING 10.0.42.1 (10.0.42.1) 56(84) bytes of data.
+64 bytes from 10.0.42.1: icmp_seq=1 ttl=61 time=17.4 ms
+64 bytes from 10.0.42.1: icmp_seq=2 ttl=61 time=17.5 ms
+64 bytes from 10.0.42.1: icmp_seq=3 ttl=61 time=17.5 ms
+64 bytes from 10.0.42.1: icmp_seq=4 ttl=61 time=17.5 ms
+64 bytes from 10.0.42.1: icmp_seq=5 ttl=61 time=17.5 ms
+
+--- 10.0.42.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 17.436/17.510/17.567/0.172 ms
+PING 10.0.46.1 (10.0.46.1) 56(84) bytes of data.
+64 bytes from 10.0.46.1: icmp_seq=1 ttl=61 time=16.4 ms
+64 bytes from 10.0.46.1: icmp_seq=2 ttl=61 time=16.4 ms
+64 bytes from 10.0.46.1: icmp_seq=3 ttl=61 time=16.5 ms
+64 bytes from 10.0.46.1: icmp_seq=4 ttl=61 time=16.3 ms
+64 bytes from 10.0.46.1: icmp_seq=5 ttl=61 time=16.5 ms
+
+--- 10.0.46.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 16.382/16.480/16.522/0.050 ms
+PING 10.0.22.1 (10.0.22.1) 56(84) bytes of data.
+64 bytes from 10.0.22.1: icmp_seq=1 ttl=64 time=0.032 ms
+64 bytes from 10.0.22.1: icmp_seq=2 ttl=64 time=0.031 ms
+64 bytes from 10.0.22.1: icmp_seq=3 ttl=64 time=0.025 ms
+64 bytes from 10.0.22.1: icmp_seq=4 ttl=64 time=0.025 ms
+64 bytes from 10.0.22.1: icmp_seq=5 ttl=64 time=0.029 ms
+
+--- 10.0.22.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 416ms
+rtt min/avg/max/mdev = 0.025/0.028/0.032/0.005 ms
+PING 10.0.32.1 (10.0.32.1) 56(84) bytes of data.
+64 bytes from 10.0.32.1: icmp_seq=1 ttl=63 time=5.25 ms
+64 bytes from 10.0.32.1: icmp_seq=2 ttl=63 time=5.19 ms
+64 bytes from 10.0.32.1: icmp_seq=3 ttl=63 time=5.28 ms
+64 bytes from 10.0.32.1: icmp_seq=4 ttl=63 time=5.28 ms
+64 bytes from 10.0.32.1: icmp_seq=5 ttl=63 time=5.27 ms
+
+--- 10.0.32.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 401ms
+rtt min/avg/max/mdev = 5.197/5.256/5.283/0.072 ms
+PING 10.0.1.2 (10.0.1.2) 56(84) bytes of data.
+64 bytes from 10.0.1.2: icmp_seq=1 ttl=62 time=17.3 ms
+64 bytes from 10.0.1.2: icmp_seq=2 ttl=62 time=17.4 ms
+64 bytes from 10.0.1.2: icmp_seq=3 ttl=62 time=17.3 ms
+64 bytes from 10.0.1.2: icmp_seq=4 ttl=62 time=17.4 ms
+64 bytes from 10.0.1.2: icmp_seq=5 ttl=62 time=17.3 ms
+
+--- 10.0.1.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 17.347/17.390/17.420/0.026 ms
+PING 10.0.167.2 (10.0.167.2) 56(84) bytes of data.
+64 bytes from 10.0.167.2: icmp_seq=1 ttl=62 time=17.3 ms
+64 bytes from 10.0.167.2: icmp_seq=2 ttl=62 time=17.3 ms
+64 bytes from 10.0.167.2: icmp_seq=3 ttl=62 time=17.4 ms
+64 bytes from 10.0.167.2: icmp_seq=4 ttl=62 time=17.3 ms
+64 bytes from 10.0.167.2: icmp_seq=5 ttl=62 time=17.4 ms
+
+--- 10.0.167.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 17.361/17.395/17.417/0.119 ms
+PING 10.0.14.2 (10.0.14.2) 56(84) bytes of data.
+64 bytes from 10.0.14.2: icmp_seq=1 ttl=62 time=17.4 ms
+64 bytes from 10.0.14.2: icmp_seq=2 ttl=62 time=17.4 ms
+64 bytes from 10.0.14.2: icmp_seq=3 ttl=62 time=17.3 ms
+64 bytes from 10.0.14.2: icmp_seq=4 ttl=62 time=17.4 ms
+64 bytes from 10.0.14.2: icmp_seq=5 ttl=62 time=17.3 ms
+
+--- 10.0.14.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 17.388/17.411/17.444/0.145 ms
+PING 10.0.169.2 (10.0.169.2) 56(84) bytes of data.
+64 bytes from 10.0.169.2: icmp_seq=1 ttl=63 time=6.29 ms
+64 bytes from 10.0.169.2: icmp_seq=2 ttl=63 time=6.28 ms
+64 bytes from 10.0.169.2: icmp_seq=3 ttl=63 time=6.29 ms
+64 bytes from 10.0.169.2: icmp_seq=4 ttl=63 time=6.27 ms
+64 bytes from 10.0.169.2: icmp_seq=5 ttl=63 time=6.21 ms
+
+--- 10.0.169.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 6.216/6.272/6.297/0.091 ms
+PING 10.0.0.2 (10.0.0.2) 56(84) bytes of data.
+64 bytes from 10.0.0.2: icmp_seq=1 ttl=63 time=4.22 ms
+64 bytes from 10.0.0.2: icmp_seq=2 ttl=63 time=4.27 ms
+64 bytes from 10.0.0.2: icmp_seq=3 ttl=63 time=4.26 ms
+64 bytes from 10.0.0.2: icmp_seq=4 ttl=63 time=4.27 ms
+64 bytes from 10.0.0.2: icmp_seq=5 ttl=63 time=4.28 ms
+
+--- 10.0.0.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 401ms
+rtt min/avg/max/mdev = 4.226/4.264/4.288/0.085 ms
+PING 10.0.151.2 (10.0.151.2) 56(84) bytes of data.
+64 bytes from 10.0.151.2: icmp_seq=1 ttl=62 time=15.3 ms
+64 bytes from 10.0.151.2: icmp_seq=2 ttl=62 time=15.4 ms
+64 bytes from 10.0.151.2: icmp_seq=3 ttl=62 time=15.3 ms
+64 bytes from 10.0.151.2: icmp_seq=4 ttl=62 time=15.3 ms
+64 bytes from 10.0.151.2: icmp_seq=5 ttl=62 time=15.3 ms
+
+--- 10.0.151.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 15.350/15.377/15.424/0.114 ms
+PING 10.0.10.2 (10.0.10.2) 56(84) bytes of data.
+64 bytes from 10.0.10.2: icmp_seq=1 ttl=62 time=19.4 ms
+64 bytes from 10.0.10.2: icmp_seq=2 ttl=62 time=19.3 ms
+64 bytes from 10.0.10.2: icmp_seq=3 ttl=62 time=19.4 ms
+64 bytes from 10.0.10.2: icmp_seq=4 ttl=62 time=19.3 ms
+64 bytes from 10.0.10.2: icmp_seq=5 ttl=62 time=19.4 ms
+
+--- 10.0.10.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 401ms
+rtt min/avg/max/mdev = 19.328/19.399/19.435/0.157 ms
+PING 10.0.24.1 (10.0.24.1) 56(84) bytes of data.
+64 bytes from 10.0.24.1: icmp_seq=1 ttl=62 time=15.4 ms
+64 bytes from 10.0.24.1: icmp_seq=2 ttl=62 time=15.4 ms
+64 bytes from 10.0.24.1: icmp_seq=3 ttl=62 time=15.4 ms
+64 bytes from 10.0.24.1: icmp_seq=4 ttl=62 time=15.4 ms
+64 bytes from 10.0.24.1: icmp_seq=5 ttl=62 time=15.4 ms
+
+--- 10.0.24.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 15.421/15.435/15.450/0.111 ms
+PING 10.0.5.2 (10.0.5.2) 56(84) bytes of data.
+64 bytes from 10.0.5.2: icmp_seq=1 ttl=62 time=19.4 ms
+64 bytes from 10.0.5.2: icmp_seq=2 ttl=62 time=19.4 ms
+64 bytes from 10.0.5.2: icmp_seq=3 ttl=62 time=19.4 ms
+64 bytes from 10.0.5.2: icmp_seq=4 ttl=62 time=19.4 ms
+64 bytes from 10.0.5.2: icmp_seq=5 ttl=62 time=19.4 ms
+
+--- 10.0.5.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 19.400/19.423/19.438/0.153 ms
+PING 10.0.28.1 (10.0.28.1) 56(84) bytes of data.
+64 bytes from 10.0.28.1: icmp_seq=1 ttl=62 time=7.36 ms
+64 bytes from 10.0.28.1: icmp_seq=2 ttl=62 time=7.41 ms
+64 bytes from 10.0.28.1: icmp_seq=3 ttl=62 time=7.35 ms
+64 bytes from 10.0.28.1: icmp_seq=4 ttl=62 time=7.34 ms
+64 bytes from 10.0.28.1: icmp_seq=5 ttl=62 time=7.38 ms
+
+--- 10.0.28.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 7.342/7.370/7.411/0.096 ms
+PING 10.0.2.2 (10.0.2.2) 56(84) bytes of data.
+64 bytes from 10.0.2.2: icmp_seq=1 ttl=63 time=11.2 ms
+64 bytes from 10.0.2.2: icmp_seq=2 ttl=63 time=11.2 ms
+64 bytes from 10.0.2.2: icmp_seq=3 ttl=63 time=11.3 ms
+64 bytes from 10.0.2.2: icmp_seq=4 ttl=63 time=11.1 ms
+64 bytes from 10.0.2.2: icmp_seq=5 ttl=63 time=11.2 ms
+
+--- 10.0.2.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 401ms
+rtt min/avg/max/mdev = 11.151/11.237/11.302/0.128 ms
+PING 10.0.152.2 (10.0.152.2) 56(84) bytes of data.
+64 bytes from 10.0.152.2: icmp_seq=1 ttl=62 time=14.4 ms
+64 bytes from 10.0.152.2: icmp_seq=2 ttl=62 time=14.3 ms
+64 bytes from 10.0.152.2: icmp_seq=3 ttl=62 time=14.3 ms
+64 bytes from 10.0.152.2: icmp_seq=4 ttl=62 time=14.4 ms
+64 bytes from 10.0.152.2: icmp_seq=5 ttl=62 time=14.3 ms
+
+--- 10.0.152.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 401ms
+rtt min/avg/max/mdev = 14.346/14.381/14.414/0.028 ms
+PING 10.0.177.1 (10.0.177.1) 56(84) bytes of data.
+64 bytes from 10.0.177.1: icmp_seq=1 ttl=62 time=8.44 ms
+64 bytes from 10.0.177.1: icmp_seq=2 ttl=62 time=8.36 ms
+64 bytes from 10.0.177.1: icmp_seq=3 ttl=62 time=8.39 ms
+64 bytes from 10.0.177.1: icmp_seq=4 ttl=62 time=8.40 ms
+64 bytes from 10.0.177.1: icmp_seq=5 ttl=62 time=8.36 ms
+
+--- 10.0.177.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 8.362/8.395/8.445/0.065 ms
+PING 10.0.68.1 (10.0.68.1) 56(84) bytes of data.
+64 bytes from 10.0.68.1: icmp_seq=1 ttl=62 time=21.4 ms
+64 bytes from 10.0.68.1: icmp_seq=2 ttl=62 time=21.4 ms
+64 bytes from 10.0.68.1: icmp_seq=3 ttl=62 time=21.4 ms
+64 bytes from 10.0.68.1: icmp_seq=4 ttl=62 time=21.3 ms
+64 bytes from 10.0.68.1: icmp_seq=5 ttl=62 time=21.4 ms
+
+--- 10.0.68.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 21.352/21.411/21.432/0.097 ms
+PING 10.0.35.1 (10.0.35.1) 56(84) bytes of data.
+64 bytes from 10.0.35.1: icmp_seq=1 ttl=61 time=18.4 ms
+64 bytes from 10.0.35.1: icmp_seq=2 ttl=61 time=18.5 ms
+64 bytes from 10.0.35.1: icmp_seq=3 ttl=61 time=18.5 ms
+64 bytes from 10.0.35.1: icmp_seq=4 ttl=61 time=18.5 ms
+64 bytes from 10.0.35.1: icmp_seq=5 ttl=61 time=18.5 ms
+
+--- 10.0.35.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 403ms
+rtt min/avg/max/mdev = 18.483/18.534/18.562/0.174 ms
+PING 10.0.165.2 (10.0.165.2) 56(84) bytes of data.
+64 bytes from 10.0.165.2: icmp_seq=1 ttl=61 time=18.4 ms
+64 bytes from 10.0.165.2: icmp_seq=2 ttl=61 time=18.5 ms
+64 bytes from 10.0.165.2: icmp_seq=3 ttl=61 time=18.5 ms
+64 bytes from 10.0.165.2: icmp_seq=4 ttl=61 time=18.4 ms
+64 bytes from 10.0.165.2: icmp_seq=5 ttl=61 time=18.5 ms
+
+--- 10.0.165.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 18.462/18.515/18.569/0.095 ms
+PING 10.0.59.1 (10.0.59.1) 56(84) bytes of data.
+64 bytes from 10.0.59.1: icmp_seq=1 ttl=61 time=23.5 ms
+64 bytes from 10.0.59.1: icmp_seq=2 ttl=61 time=23.5 ms
+64 bytes from 10.0.59.1: icmp_seq=3 ttl=61 time=23.5 ms
+64 bytes from 10.0.59.1: icmp_seq=4 ttl=61 time=23.3 ms
+64 bytes from 10.0.59.1: icmp_seq=5 ttl=61 time=23.5 ms
+
+--- 10.0.59.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 401ms
+rtt min/avg/max/mdev = 23.397/23.503/23.557/0.111 ms
+PING 10.0.45.1 (10.0.45.1) 56(84) bytes of data.
+64 bytes from 10.0.45.1: icmp_seq=1 ttl=61 time=14.5 ms
+64 bytes from 10.0.45.1: icmp_seq=2 ttl=61 time=14.5 ms
+64 bytes from 10.0.45.1: icmp_seq=3 ttl=61 time=14.5 ms
+64 bytes from 10.0.45.1: icmp_seq=4 ttl=61 time=14.4 ms
+64 bytes from 10.0.45.1: icmp_seq=5 ttl=61 time=14.5 ms
+
+--- 10.0.45.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 14.488/14.513/14.535/0.153 ms
+PING 10.0.48.1 (10.0.48.1) 56(84) bytes of data.
+64 bytes from 10.0.48.1: icmp_seq=1 ttl=61 time=13.5 ms
+64 bytes from 10.0.48.1: icmp_seq=2 ttl=61 time=13.5 ms
+64 bytes from 10.0.48.1: icmp_seq=3 ttl=61 time=13.4 ms
+64 bytes from 10.0.48.1: icmp_seq=4 ttl=61 time=13.4 ms
+64 bytes from 10.0.48.1: icmp_seq=5 ttl=61 time=13.5 ms
+
+--- 10.0.48.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 13.444/13.502/13.553/0.133 ms
+PING 10.0.162.2 (10.0.162.2) 56(84) bytes of data.
+64 bytes from 10.0.162.2: icmp_seq=1 ttl=61 time=17.5 ms
+64 bytes from 10.0.162.2: icmp_seq=2 ttl=61 time=17.5 ms
+64 bytes from 10.0.162.2: icmp_seq=3 ttl=61 time=17.5 ms
+64 bytes from 10.0.162.2: icmp_seq=4 ttl=61 time=17.5 ms
+64 bytes from 10.0.162.2: icmp_seq=5 ttl=61 time=17.4 ms
+
+--- 10.0.162.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 17.440/17.502/17.536/0.148 ms
+PING 10.0.31.1 (10.0.31.1) 56(84) bytes of data.
+64 bytes from 10.0.31.1: icmp_seq=1 ttl=61 time=15.5 ms
+64 bytes from 10.0.31.1: icmp_seq=2 ttl=61 time=15.5 ms
+64 bytes from 10.0.31.1: icmp_seq=3 ttl=61 time=15.5 ms
+64 bytes from 10.0.31.1: icmp_seq=4 ttl=61 time=15.5 ms
+64 bytes from 10.0.31.1: icmp_seq=5 ttl=61 time=15.5 ms
+
+--- 10.0.31.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 15.512/15.541/15.565/0.158 ms
+PING 10.0.182.1 (10.0.182.1) 56(84) bytes of data.
+64 bytes from 10.0.182.1: icmp_seq=1 ttl=61 time=21.5 ms
+64 bytes from 10.0.182.1: icmp_seq=2 ttl=61 time=21.5 ms
+64 bytes from 10.0.182.1: icmp_seq=3 ttl=61 time=21.3 ms
+64 bytes from 10.0.182.1: icmp_seq=4 ttl=61 time=21.5 ms
+64 bytes from 10.0.182.1: icmp_seq=5 ttl=61 time=21.5 ms
+
+--- 10.0.182.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 21.383/21.495/21.540/0.170 ms
+PING 10.0.49.1 (10.0.49.1) 56(84) bytes of data.
+64 bytes from 10.0.49.1: icmp_seq=1 ttl=61 time=17.4 ms
+64 bytes from 10.0.49.1: icmp_seq=2 ttl=61 time=17.5 ms
+64 bytes from 10.0.49.1: icmp_seq=3 ttl=61 time=17.5 ms
+64 bytes from 10.0.49.1: icmp_seq=4 ttl=61 time=17.5 ms
+64 bytes from 10.0.49.1: icmp_seq=5 ttl=61 time=17.5 ms
+
+--- 10.0.49.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 17.434/17.519/17.560/0.151 ms
+PING 10.0.55.1 (10.0.55.1) 56(84) bytes of data.
+64 bytes from 10.0.55.1: icmp_seq=1 ttl=61 time=21.5 ms
+64 bytes from 10.0.55.1: icmp_seq=2 ttl=61 time=21.5 ms
+64 bytes from 10.0.55.1: icmp_seq=3 ttl=61 time=21.5 ms
+64 bytes from 10.0.55.1: icmp_seq=4 ttl=61 time=21.5 ms
+64 bytes from 10.0.55.1: icmp_seq=5 ttl=61 time=21.5 ms
+
+--- 10.0.55.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 403ms
+rtt min/avg/max/mdev = 21.534/21.551/21.579/0.132 ms
+PING 10.0.161.2 (10.0.161.2) 56(84) bytes of data.
+64 bytes from 10.0.161.2: icmp_seq=1 ttl=61 time=15.5 ms
+64 bytes from 10.0.161.2: icmp_seq=2 ttl=61 time=15.5 ms
+64 bytes from 10.0.161.2: icmp_seq=3 ttl=61 time=15.5 ms
+64 bytes from 10.0.161.2: icmp_seq=4 ttl=61 time=15.5 ms
+64 bytes from 10.0.161.2: icmp_seq=5 ttl=61 time=15.4 ms
+
+--- 10.0.161.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 15.497/15.511/15.524/0.079 ms
+PING 10.0.44.1 (10.0.44.1) 56(84) bytes of data.
+64 bytes from 10.0.44.1: icmp_seq=1 ttl=61 time=14.5 ms
+64 bytes from 10.0.44.1: icmp_seq=2 ttl=61 time=14.4 ms
+64 bytes from 10.0.44.1: icmp_seq=3 ttl=61 time=14.5 ms
+64 bytes from 10.0.44.1: icmp_seq=4 ttl=61 time=14.5 ms
+64 bytes from 10.0.44.1: icmp_seq=5 ttl=61 time=14.5 ms
+
+--- 10.0.44.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 403ms
+rtt min/avg/max/mdev = 14.494/14.524/14.559/0.133 ms
+PING 10.0.55.2 (10.0.55.2) 56(84) bytes of data.
+64 bytes from 10.0.55.2: icmp_seq=1 ttl=62 time=19.4 ms
+64 bytes from 10.0.55.2: icmp_seq=2 ttl=62 time=19.4 ms
+64 bytes from 10.0.55.2: icmp_seq=3 ttl=62 time=19.3 ms
+64 bytes from 10.0.55.2: icmp_seq=4 ttl=62 time=19.4 ms
+64 bytes from 10.0.55.2: icmp_seq=5 ttl=62 time=19.4 ms
+
+--- 10.0.55.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 19.396/19.420/19.433/0.153 ms
+PING 10.0.39.1 (10.0.39.1) 56(84) bytes of data.
+64 bytes from 10.0.39.1: icmp_seq=1 ttl=61 time=16.4 ms
+64 bytes from 10.0.39.1: icmp_seq=2 ttl=61 time=16.5 ms
+64 bytes from 10.0.39.1: icmp_seq=3 ttl=61 time=16.5 ms
+64 bytes from 10.0.39.1: icmp_seq=4 ttl=61 time=16.5 ms
+64 bytes from 10.0.39.1: icmp_seq=5 ttl=61 time=16.5 ms
+
+--- 10.0.39.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 16.458/16.538/16.594/0.092 ms
+PING 10.0.42.1 (10.0.42.1) 56(84) bytes of data.
+64 bytes from 10.0.42.1: icmp_seq=1 ttl=61 time=17.4 ms
+64 bytes from 10.0.42.1: icmp_seq=2 ttl=61 time=17.5 ms
+64 bytes from 10.0.42.1: icmp_seq=3 ttl=61 time=17.4 ms
+64 bytes from 10.0.42.1: icmp_seq=4 ttl=61 time=17.4 ms
+64 bytes from 10.0.42.1: icmp_seq=5 ttl=61 time=17.5 ms
+
+--- 10.0.42.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 17.450/17.491/17.525/0.026 ms
+PING 10.0.46.1 (10.0.46.1) 56(84) bytes of data.
+64 bytes from 10.0.46.1: icmp_seq=1 ttl=61 time=16.5 ms
+64 bytes from 10.0.46.1: icmp_seq=2 ttl=61 time=16.4 ms
+64 bytes from 10.0.46.1: icmp_seq=3 ttl=61 time=16.5 ms
+64 bytes from 10.0.46.1: icmp_seq=4 ttl=61 time=16.5 ms
+64 bytes from 10.0.46.1: icmp_seq=5 ttl=61 time=16.5 ms
+
+--- 10.0.46.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 403ms
+rtt min/avg/max/mdev = 16.478/16.533/16.558/0.030 ms
