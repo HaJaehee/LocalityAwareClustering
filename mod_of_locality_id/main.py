@@ -9,12 +9,17 @@
  Version : 1.0.1
  Implementation is ongoing.
  Modifier : Jaehee ha (jaehee.ha@kaist.ac.kr)
+
+  Rev. history : 2021-06-09
+ Version : 1.0.2
+ Id replacement code is implemented.
+ Modifier : Jaehee ha (jaehee.ha@kaist.ac.kr)
 """
 
 import os
 
 def main():
-    clustered_file = open("../korea-100-router-centroid-list.txt", 'r')
+    clustered_file = open("../korea-100-router-clustered.imn", 'r')
     id_replacement_file = open("../korea-100-router-clustered-id-rep.imn", 'w')
     centroid_list_file = open("../korea-100-router-centroid-list.txt", 'r')
     centroid_list = []
@@ -28,6 +33,8 @@ def main():
 
     path_dir = "./latencies"
     file_list = os.listdir(path_dir)
+
+    id_replacement_dic = {}
 
     for file in file_list :
         for centroid in centroid_list :
@@ -45,8 +52,18 @@ def main():
                     lowest_latency_ip = line_split[3].replace(":", "")
         latency_file.close()
         centroid_list_idx = centroid_ip_list.index(lowest_latency_ip)
-        new_locality_id = centroid_list[centroid_list_idx][0]
-        print("old "+file.replace("-latencies.txt", "")[0:5]+" new "+new_locality_id)
+        old_locality_id = file.replace("-latencies.txt", "")
+        new_locality_id = centroid_list[centroid_list_idx][0]+file.replace("-latencies.txt", "")[5:]
+        print("old "+old_locality_id+" new "+new_locality_id)
+        id_replacement_dic[old_locality_id] = new_locality_id
+
+    while True :
+        line = clustered_file.readline()
+        if not line : break
+        if line.startswith("\thostname") :
+            old_locality_id = line[10:23]
+            line = "\thostname " + id_replacement_dic[old_locality_id] + "\n"
+        id_replacement_file.write(line)
 
     id_replacement_file.close()
     clustered_file.close()
