@@ -61,6 +61,7 @@ def main():
         line = clustered_file.readline()
         if not line : break
         if line.startswith("\thostname") :
+            # Caution constants
             old_locality_id = line[10:23]
             line = "\thostname " + id_replacement_dic[old_locality_id] + "\n"
         id_replacement_file.write(line)
