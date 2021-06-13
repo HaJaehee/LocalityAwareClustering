@@ -13,6 +13,11 @@
  First approach implementation is done.
  Modifier : Jaehee ha (jaehee.ha@kaist.ac.kr)
 
+  Rev. history : 2021-06-13
+ Version : 1.0.1
+ Node num and ip list extraction is implemented.
+ Modifier : Jaehee ha (jaehee.ha@kaist.ac.kr)
+
 """
 
 # Press Shift+F10 to execute it or replace it with your code.
@@ -31,6 +36,24 @@ __result_list__=[]
 __result_label__=0
 
 def main():
+    node_list_file = open("korea-100-router-node-list.txt", 'r')
+    node_num_ip_file = open("korea-100-router-node-num-ip-list.txt", 'w')
+    node_num_ip_list = []
+    while True:
+        line = node_list_file.readline()
+        if not line: break
+        line_split = line.split(",")
+        node_num_ip_list.append((line_split[3].replace("n", "").zfill(3), line_split[2]))
+
+    node_list_file.close()
+    sorted_list = sorted(node_num_ip_list, key=lambda x:x[0])
+
+    for i in sorted_list :
+        node_num_ip_file.write(i[0]+","+i[1]+"\n")
+
+    node_num_ip_file.close()
+
+def main2():
     # Use a breakpoint in the code line below to debug your script.
     coordinate_list = []
     coordinate_list_with_name_ip = []
