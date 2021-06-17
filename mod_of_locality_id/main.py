@@ -75,7 +75,7 @@ def main() :
         id_replacement_dic[old_locality_id] = new_locality_id
         if old_locality_id == new_locality_id :
             old_centroid_latency = lowest_latency
-        latency_comparison_file.write(old_locality_id+","+str(old_centroid_latency)+","+new_locality_id+","+str(lowest_latency)+"\n")
+        latency_comparison_file.write("id:"+old_locality_id+","+str(old_centroid_latency)+",id:"+new_locality_id+","+str(lowest_latency)+"\n")
 
     latency_comparison_file.close()
 
