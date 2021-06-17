@@ -5,14 +5,19 @@
  Version : 1.0.1
  Created this module.
 
-  Rev. history : 2021-06-06
+ Rev. history : 2021-06-06
  Version : 1.0.1
  Implementation is ongoing.
  Modifier : Jaehee ha (jaehee.ha@kaist.ac.kr)
 
-  Rev. history : 2021-06-09
+ Rev. history : 2021-06-09
  Version : 1.0.2
  Id replacement code is implemented.
+ Modifier : Jaehee ha (jaehee.ha@kaist.ac.kr)
+
+ Rev. history : 2021-06-17
+ Version : 1.0.3
+ Latency comparison file creating function implemented.
  Modifier : Jaehee ha (jaehee.ha@kaist.ac.kr)
 """
 
