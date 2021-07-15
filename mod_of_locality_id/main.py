@@ -19,13 +19,19 @@
  Version : 1.0.3
  Latency comparison file creating function implemented.
  Modifier : Jaehee ha (jaehee.ha@kaist.ac.kr)
+
+ Rev. history : 2021-07-15
+ Version : 1.1.0
+ Added clustering scheme based on cluster weights.
+ Modifier : Jaehee ha (jaehee.ha@kaist.ac.kr)
 """
 
 import os
 
+# Outputs latency comparison file
 def main() :
-    centroid_list_file = open("../korea-100-router-centroid-list.txt", 'r')
-    latency_comparison_file = open("latency-comparison-file.csv", 'w')
+    centroid_list_file = open("../korea-37-router-centroid-list.txt", 'r')
+    latency_comparison_file = open("latency-comparison-file-37.csv", 'w')
     centroid_list = []
     centroid_ip_list = []
     centroid_ip_to_locality_id_dic = {}
@@ -35,10 +41,10 @@ def main() :
         line = centroid_list_file.readline()
         if not line: break
         centroid_list.append(line.split(","))
-        centroid_ip_list.append(centroid_list[len(centroid_list) - 1][2])
+        centroid_ip_list.append(centroid_list[len(centroid_list) - 1][2].replace("/24",""))
         line_split = line.split(",")
         centroid_ip_to_locality_id_dic[line_split[2]] = line_split[0]
-        centroid_locality_id_to_ip_dic[line_split[0]] = line_split[2]
+        centroid_locality_id_to_ip_dic[line_split[0]] = line_split[2].replace("/24","")
     centroid_list_file.close()
 
     path_dir = "./latencies"
@@ -57,11 +63,17 @@ def main() :
         while True:
             line = latency_file.readline()
             if not line: break
-            if "icmp_seq=5" in line:
+            ###############################
+            # Cautions! icmp_seq constant #
+            ###############################
+            if "icmp_seq=2" in line:
                 line_split = line.split(" ")
                 latency_ip = line_split[3].replace(":", "")
+                #print("latency_ip " + latency_ip)
+                #print("centroid_locality_id_to_ip_dic " + centroid_locality_id_to_ip_dic[file.replace("-latencies.txt", "")[0:5]])
                 if latency_ip == centroid_locality_id_to_ip_dic[file.replace("-latencies.txt", "")[0:5]] :
-                    old_centroid_latency = line_split[6].replace("time=", "")
+                    old_centroid_latency = float(line_split[6].replace("time=", ""))
+                    #print("old_centroid_latency " + str(old_centroid_latency))
                     old_centroid_latency_ip = latency_ip
                 if lowest_latency > float(line_split[6].replace("time=", "")):
                     lowest_latency = float(line_split[6].replace("time=", ""))
@@ -72,6 +84,7 @@ def main() :
         old_locality_id = file.replace("-latencies.txt", "")
         new_locality_id = centroid_list[centroid_list_idx][0] + file.replace("-latencies.txt", "")[5:]
         print("old " + old_locality_id + " new " + new_locality_id)
+        #print("old latency " + str(old_centroid_latency) + " new latency " + str(lowest_latency))
         id_replacement_dic[old_locality_id] = new_locality_id
         if old_locality_id == new_locality_id :
             old_centroid_latency = lowest_latency
@@ -79,17 +92,18 @@ def main() :
 
     latency_comparison_file.close()
 
+# Outputs id replacement
 def main2():
-    clustered_file = open("../korea-100-router-clustered.imn", 'r')
-    id_replacement_file = open("../korea-100-router-clustered-id-rep.imn", 'w')
-    centroid_list_file = open("../korea-100-router-centroid-list.txt", 'r')
+    clustered_file = open("../korea-37-router-clustered.imn", 'r')
+    id_replacement_file = open("../korea-37-router-clustered-id-rep.imn", 'w')
+    centroid_list_file = open("../korea-37-router-centroid-list.txt", 'r')
     centroid_list = []
     centroid_ip_list = []
     while True :
         line = centroid_list_file.readline()
         if not line : break
         centroid_list.append(line.split(","))
-        centroid_ip_list.append(centroid_list[len(centroid_list)-1][2])
+        centroid_ip_list.append(centroid_list[len(centroid_list)-1][2].replace("/24",""))
     centroid_list_file.close()
 
     path_dir = "./latencies"
@@ -106,10 +120,15 @@ def main2():
         while True :
             line = latency_file.readline()
             if not line : break
-            if "icmp_seq=5" in line :
+            ###############################
+            # Cautions! icmp_seq constant #
+            ###############################
+            if "icmp_seq=2" in line :
                 line_split = line.split(" ")
                 if lowest_latency > float(line_split[6].replace("time=", "")):
+                    #print('old lowest: ' + str(lowest_latency))
                     lowest_latency = float(line_split[6].replace("time=", ""))
+                    #print('new lowest: ' + str(lowest_latency))
                     lowest_latency_ip = line_split[3].replace(":", "")
         latency_file.close()
         centroid_list_idx = centroid_ip_list.index(lowest_latency_ip)

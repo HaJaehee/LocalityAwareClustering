@@ -13,9 +13,14 @@
  First approach implementation is done.
  Modifier : Jaehee ha (jaehee.ha@kaist.ac.kr)
 
-  Rev. history : 2021-06-13
+ Rev. history : 2021-06-13
  Version : 1.0.1
  Node num and ip list extraction is implemented.
+ Modifier : Jaehee ha (jaehee.ha@kaist.ac.kr)
+
+ Rev. history : 2021-07-15
+ Version : 1.1.0
+ Added clustering scheme based on cluster weights.
  Modifier : Jaehee ha (jaehee.ha@kaist.ac.kr)
 
 """
@@ -35,7 +40,7 @@ import re
 __result_list__=[]
 __result_label__=0
 
-def main():
+def main2():
     node_list_file = open("korea-100-router-node-list.txt", 'r')
     node_num_ip_file = open("korea-100-router-node-num-ip-list.txt", 'w')
     node_num_ip_list = []
@@ -53,21 +58,21 @@ def main():
 
     node_num_ip_file.close()
 
-def main2():
-    # Use a breakpoint in the code line below to debug your script.
+def main():
+    # Clusters nodes from file 'imn_file' and outputs file 'imn_file2'
+
     coordinate_list = []
     coordinate_list_with_name_ip = []
 
-    imn_file = open("korea-100-router.imn", 'r')
+    imn_file = open("korea-37-router.imn", 'r')
     node_name = str()
     ip_address = str()
     while True:
         line = imn_file.readline()
         if not line: break
 
-        if "node" in line:
-            if "nodes" not in line:
-                node_name = line.split(" ")[1]
+        if "hostname" in line:
+            node_name = line.split(" ")[1].replace("\n", "")
         if "interface eth0" in line:
             line = imn_file.readline()
             if "ip address" in line:
@@ -91,21 +96,46 @@ def main2():
     #plt.scatter(X[:, 0], X[:, 1])
     #plt.show()
 
-    level=int(5)
+    kmeans = KMeans(n_clusters=10)
+    kmeans.fit(X)
+    print(kmeans.cluster_centers_)
+    print(kmeans.labels_)
 
-    #kmeans = KMeans(n_clusters=16)
-    #kmeans.fit(X)
-    #print(kmeans.cluster_centers_)
-    #print(kmeans.labels_)
+    plt.scatter(X[:, 0], X[:, 1], c=kmeans.labels_, cmap='rainbow')
+    plt.scatter(kmeans.cluster_centers_[:, 0], kmeans.cluster_centers_[:, 1], color='black')
+    plt.show()
 
-    #plt.scatter(X[:, 0], X[:, 1], c=kmeans.labels_, cmap='rainbow')
-    #plt.scatter(kmeans.cluster_centers_[:, 0], kmeans.cluster_centers_[:, 1], color='black')
-    #plt.show()
-
-    two_means_cluster(X, level)
+    level = int(4)
+    #two_means_cluster(X, level)
 
     global __result_list__
     #print (__result_list__)
+
+    # Chose centroids
+    label_idx = 0
+    print('X=[')
+    idx_minimum = {}
+    minimum_dist = {}
+    minimum_dist_temp = {}
+    for i in X :
+        minimum_dist[kmeans.labels_[label_idx]] = ((i[0] - kmeans.cluster_centers_[kmeans.labels_[label_idx]][0]) ** 2) + ((i[1] - kmeans.cluster_centers_[kmeans.labels_[label_idx]][1]) ** 2)
+        if not kmeans.labels_[label_idx] in minimum_dist_temp:
+            __result_list__.append([i[0], i[1], kmeans.labels_[label_idx], 'centroid'])
+            idx_minimum[kmeans.labels_[label_idx]] = len(__result_list__) - 1
+            minimum_dist_temp[kmeans.labels_[label_idx]] = minimum_dist[kmeans.labels_[label_idx]]
+        elif minimum_dist[kmeans.labels_[label_idx]] < minimum_dist_temp[kmeans.labels_[label_idx]]:
+            if len(__result_list__) > 0:
+                __result_list__[idx_minimum[kmeans.labels_[label_idx]]][3] = ''
+            __result_list__.append([i[0], i[1], kmeans.labels_[label_idx], 'centroid'])
+            idx_minimum[kmeans.labels_[label_idx]] = len(__result_list__) - 1
+            minimum_dist_temp[kmeans.labels_[label_idx]] = minimum_dist[kmeans.labels_[label_idx]]
+        else:
+            __result_list__.append([i[0], i[1], kmeans.labels_[label_idx], ''])
+        print('[x: ' + str(i[0]) + ' y: ' + str(i[1]) + ' label: ' + str(kmeans.labels_[label_idx]) + ']')
+        label_idx += 1
+    print(']')
+
+    print(__result_list__)
 
     coordinate_list_with_name_label_ip=[]
     idx_i=0
@@ -123,9 +153,9 @@ def main2():
     #print("\n\n")
     #print(coordinate_list_with_name_label_ip)
 
-    node_list_file = open("korea-100-router-node-list.txt", 'w')
-    centroid_list_file = open("korea-100-router-centroid-list.txt", 'w')
-    centroid_ip_list_file = open("korea-100-router-centroid-ip-list.txt", 'w')
+    node_list_file = open("korea-37-router-node-list.txt", 'w')
+    centroid_list_file = open("korea-37-router-centroid-list.txt", 'w')
+    centroid_ip_list_file = open("korea-37-router-centroid-ip-list.txt", 'w')
     for i in coordinate_list_with_name_label_ip :
         if "centroid" in i[4]:
             centroid_list_file.write(str(i[3])+","+bin(int(i[0].split("n")[1])).split("b")[1].zfill(8)+","+str(i[5])+","+str(i[0])+","+str(i[1])+","+str(i[2])+","+str(i[4])+"\n")
@@ -138,9 +168,9 @@ def main2():
     centroid_ip_list_file.close()
     node_list_file.close()
 
-    imn_file = open("korea-100-router.imn", 'r')
+    imn_file = open("korea-37-router.imn", 'r')
 
-    imn_file2 = open("korea-100-router-clustered.imn", 'w')
+    imn_file2 = open("korea-37-router-clustered.imn", 'w')
 
     while True:
         line = imn_file.readline()
@@ -185,6 +215,7 @@ def two_means_cluster(array_x, level):
         return
     global __result_list__
     global __result_label__
+
     kmeans = KMeans(n_clusters=2)
     kmeans.fit(array_x)
     a = []
@@ -199,7 +230,7 @@ def two_means_cluster(array_x, level):
     for i in array_x:
         if kmeans.labels_[idx] == 0:
             a.append(i)
-            if level == 1:
+            if level == 1 :
                 minimum_dist_a = ((i[0]-kmeans.cluster_centers_[0][0]) ** 2) + ((i[1]-kmeans.cluster_centers_[0][1]) ** 2)
                 if minimum_dist_a < minimum_dist_temp_a :
                     if len(__result_list__) > 0 :
@@ -212,12 +243,12 @@ def two_means_cluster(array_x, level):
 
         elif kmeans.labels_[idx] == 1:
             b.append(i)
-            if level == 1:
+            if level == 1 :
                 minimum_dist_b = ((i[0]-kmeans.cluster_centers_[1][0]) ** 2) + ((i[1]-kmeans.cluster_centers_[1][1]) ** 2)
                 if minimum_dist_b < minimum_dist_temp_b :
                     if len(__result_list__) > 0 :
                         __result_list__[idx_minimum_b][3] = ''
-                    __result_list__.append([i[0], i[1], __result_label__, 'centroid'])
+                    __result_list__.append([i[0], i[1], __result_label__+1, 'centroid'])
                     idx_minimum_b = len(__result_list__) - 1
                     minimum_dist_temp_b = minimum_dist_b
                 else :
@@ -227,7 +258,9 @@ def two_means_cluster(array_x, level):
     np_a = np.array(a[:])
     np_b = np.array(b[:])
     if level == 0:
+        #print ('np_a')
         #print (np_a)
+        #print ('np_b')
         #print (np_b)
         #print (kmeans.cluster_centers_)
         __result_label__ += 1
