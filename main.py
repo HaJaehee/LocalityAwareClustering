@@ -90,52 +90,120 @@ def main():
     #print(coordinate_list)
     #print(coordinate_list_with_name_ip)
 
-    X=np.array(coordinate_list[:])
+    #X=np.array(coordinate_list[:])
+    X = pd.DataFrame(np.array(coordinate_list[:]), columns=['x','y'])
     #print(X[:,0])
     #print(X[:,1])
     #plt.scatter(X[:, 0], X[:, 1])
     #plt.show()
 
-    kmeans = KMeans(n_clusters=10)
-    kmeans.fit(X)
-    print(kmeans.cluster_centers_)
-    print(kmeans.labels_)
 
-    plt.scatter(X[:, 0], X[:, 1], c=kmeans.labels_, cmap='rainbow')
+    # ks = range(1, 10)
+    # inertias = []
+    # for k in ks:
+    #     model = KMeans(n_clusters=k)
+    #     model.fit(X)
+    #     inertias.append(model.inertia_)
+    # plt.plot(ks, inertias, '-o')
+    # plt.xlabel('number of clusters, k')
+    # plt.ylabel('inertia')
+    # plt.xticks(ks)
+    # plt.show()
+
+    # print(X)
+    n_clusters = 13
+    kmeans = KMeans(n_clusters=n_clusters)
+    condition = 5
+    # A cluster size MUST be equal or lower than condition
+    while True:
+        node_count = []
+        for i in range(0, n_clusters):
+            node_count.append(0)
+        kmeans.fit(X)
+        is_continue = False
+        for i in kmeans.labels_:
+            node_count[i] += 1
+            if node_count[i] > condition:
+                is_continue = True
+                break
+        if is_continue is True:
+            continue
+        else:
+            break
+
+    #print(kmeans.cluster_centers_)
+    #print(kmeans.labels_)
+
+    # Replace labels based on distance from zero point
+    new_cluster_centers_ = []
+    dist = []
+    inc = 0
+    for i in kmeans.cluster_centers_:
+        dist.append([(i[0] ** 2) + (i[1] ** 2), inc])
+        new_cluster_centers_.append([])
+        inc += 1
+
+    dist.sort(key=lambda x:x[0])
+    #print(dist)
+
+    old_new_label_map = {}
+    inc = 0
+    for old_label in dist:
+        old_new_label_map[old_label[1]] = inc
+        inc += 1
+    #print (old_new_label_map)
+
+    new_labels_ = []
+    for old_label in kmeans.labels_:
+        new_labels_.append(old_new_label_map[old_label])
+    for i in range(0, n_clusters) :
+        new_cluster_centers_[old_new_label_map[i]] = kmeans.cluster_centers_[i]
+
+    #print(new_cluster_centers_)
+    #print(new_labels_)
+
+    X['label'] = np.array(new_labels_[:])
+
+    #plt.scatter(X[:, 0], X[:, 1], c=kmeans.labels_, cmap='rainbow')
+    sns.scatterplot(x="x", y="y", hue="label", data=X, palette="rainbow", legend='full')
     plt.scatter(kmeans.cluster_centers_[:, 0], kmeans.cluster_centers_[:, 1], color='black')
+    plt.legend()
     plt.show()
 
-    level = int(4)
+    #level = int(4)
     #two_means_cluster(X, level)
 
     global __result_list__
-    #print (__result_list__)
 
-    # Chose centroids
-    label_idx = 0
-    print('X=[')
+    # New chose centroids
     idx_minimum = {}
     minimum_dist = {}
     minimum_dist_temp = {}
-    for i in X :
-        minimum_dist[kmeans.labels_[label_idx]] = ((i[0] - kmeans.cluster_centers_[kmeans.labels_[label_idx]][0]) ** 2) + ((i[1] - kmeans.cluster_centers_[kmeans.labels_[label_idx]][1]) ** 2)
-        if not kmeans.labels_[label_idx] in minimum_dist_temp:
-            __result_list__.append([i[0], i[1], kmeans.labels_[label_idx], 'centroid'])
-            idx_minimum[kmeans.labels_[label_idx]] = len(__result_list__) - 1
-            minimum_dist_temp[kmeans.labels_[label_idx]] = minimum_dist[kmeans.labels_[label_idx]]
-        elif minimum_dist[kmeans.labels_[label_idx]] < minimum_dist_temp[kmeans.labels_[label_idx]]:
+    for idx, row in X.iterrows():
+        # row['x'], row['y'], row['label']
+        # new_labels_
+        # new_cluster_centers_
+        # distance calculation
+        # x-axis: row['x'], new_cluster_centers_[row['label']][0]
+        # y-axis: row['y'], new_cluster_centers_[row['label']][1]
+        x = row['x']
+        y = row['y']
+        label = int(row['label'])
+        minimum_dist_temp[label] = ((x - new_cluster_centers_[label][0]) ** 2) + ((y - new_cluster_centers_[label][1]) ** 2)
+        if not label in minimum_dist:
+            __result_list__.append([x, y, label, 'centroid'])
+            idx_minimum[label] = len(__result_list__)-1
+            minimum_dist[label] = minimum_dist_temp[label]
+        elif minimum_dist[label] > minimum_dist_temp[label]:
             if len(__result_list__) > 0:
-                __result_list__[idx_minimum[kmeans.labels_[label_idx]]][3] = ''
-            __result_list__.append([i[0], i[1], kmeans.labels_[label_idx], 'centroid'])
-            idx_minimum[kmeans.labels_[label_idx]] = len(__result_list__) - 1
-            minimum_dist_temp[kmeans.labels_[label_idx]] = minimum_dist[kmeans.labels_[label_idx]]
+                __result_list__[idx_minimum[label]][3] = ''
+            __result_list__.append([x, y, label, 'centroid'])
+            idx_minimum[label] = len(__result_list__)-1
+            minimum_dist[label] = minimum_dist_temp[label]
         else:
-            __result_list__.append([i[0], i[1], kmeans.labels_[label_idx], ''])
-        print('[x: ' + str(i[0]) + ' y: ' + str(i[1]) + ' label: ' + str(kmeans.labels_[label_idx]) + ']')
-        label_idx += 1
-    print(']')
-
+            __result_list__.append([x, y, label, ''])
     print(__result_list__)
+
 
     coordinate_list_with_name_label_ip=[]
     idx_i=0
