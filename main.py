@@ -96,6 +96,8 @@ def main():
     #print(X[:,1])
     #plt.scatter(X[:, 0], X[:, 1])
     #plt.show()
+    sns.scatterplot(x="x", y="y", data=X)
+    plt.show()
 
 
     # ks = range(1, 10)

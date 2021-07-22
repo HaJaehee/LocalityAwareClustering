@@ -310,8 +310,8 @@ node n143 {
 	!
     }
     canvas c1
-    iconcoords {1950.0 1644.0}
-    labelcoords {1950.0 1676.0}
+    iconcoords {1922.0 1996.0}
+    labelcoords {1922.0 2028.0}
     interface-peer {eth0 n4}
 }
 
@@ -327,8 +327,8 @@ node n144 {
 	!
     }
     canvas c1
-    iconcoords {1324.0 1962.0}
-    labelcoords {1324.0 1994.0}
+    iconcoords {1576.0 2258.0}
+    labelcoords {1576.0 2290.0}
     interface-peer {eth0 n4}
 }
 
@@ -344,8 +344,8 @@ node n145 {
 	!
     }
     canvas c1
-    iconcoords {1496.0 2870.0}
-    labelcoords {1496.0 2902.0}
+    iconcoords {1920.0 2754.0}
+    labelcoords {1920.0 2786.0}
     interface-peer {eth0 n4}
 }
 
@@ -361,8 +361,8 @@ node n146 {
 	!
     }
     canvas c1
-    iconcoords {888.0 2860.0}
-    labelcoords {888.0 2892.0}
+    iconcoords {1340.0 2628.0}
+    labelcoords {1340.0 2660.0}
     interface-peer {eth0 n4}
 }
 
@@ -378,8 +378,8 @@ node n158 {
 	!
     }
     canvas c1
-    iconcoords {4176.0 3092.0}
-    labelcoords {4176.0 3124.0}
+    iconcoords {3464.0 3092.0}
+    labelcoords {3464.0 3124.0}
     interface-peer {eth0 n6}
 }
 
@@ -395,8 +395,8 @@ node n165 {
 	!
     }
     canvas c1
-    iconcoords {2424.0 348.0}
-    labelcoords {2424.0 380.0}
+    iconcoords {2672.0 512.0}
+    labelcoords {2672.0 544.0}
     interface-peer {eth0 n3}
 }
 
@@ -429,8 +429,8 @@ node n167 {
 	!
     }
     canvas c1
-    iconcoords {632.0 1328.0}
-    labelcoords {632.0 1360.0}
+    iconcoords {592.0 1320.0}
+    labelcoords {592.0 1352.0}
     interface-peer {eth0 n1}
 }
 
@@ -446,8 +446,8 @@ node n173 {
 	!
     }
     canvas c1
-    iconcoords {1040.0 1616.0}
-    labelcoords {1040.0 1648.0}
+    iconcoords {956.0 1200.0}
+    labelcoords {956.0 1232.0}
     interface-peer {eth0 n1}
 }
 
@@ -463,8 +463,8 @@ node n176 {
 	!
     }
     canvas c1
-    iconcoords {1094.0 221.0}
-    labelcoords {1094.0 253.0}
+    iconcoords {970.0 345.0}
+    labelcoords {970.0 377.0}
     interface-peer {eth0 n2}
 }
 
@@ -480,8 +480,8 @@ node n182 {
 	!
     }
     canvas c1
-    iconcoords {1666.0 184.0}
-    labelcoords {1666.0 216.0}
+    iconcoords {1378.0 572.0}
+    labelcoords {1378.0 604.0}
     interface-peer {eth0 n2}
 }
 
@@ -497,8 +497,8 @@ node n189 {
 	!
     }
     canvas c1
-    iconcoords {2600.0 2420.0}
-    labelcoords {2600.0 2452.0}
+    iconcoords {2736.0 2504.0}
+    labelcoords {2736.0 2536.0}
     interface-peer {eth0 n6}
 }
 
@@ -513,8 +513,8 @@ node n11 {
 	 ipv6 address 2001:35::1/64
 	!
     }
-    iconcoords {2912.0 1340.0}
-    labelcoords {2912.0 1368.0}
+    iconcoords {3068.0 1072.0}
+    labelcoords {3068.0 1100.0}
     canvas c1
     interface-peer {eth0 n3}
 }
@@ -530,8 +530,8 @@ node n16 {
 	 ipv6 address 2001:26::1/64
 	!
     }
-    iconcoords {1649.0 1063.0}
-    labelcoords {1649.0 1091.0}
+    iconcoords {1553.0 995.0}
+    labelcoords {1553.0 1023.0}
     canvas c1
     interface-peer {eth0 n2}
 }
@@ -564,8 +564,8 @@ node n23 {
 	 ipv6 address 2001:45::1/64
 	!
     }
-    iconcoords {2998.0 2777.0}
-    labelcoords {2998.0 2805.0}
+    iconcoords {3054.0 2797.0}
+    labelcoords {3054.0 2825.0}
     canvas c1
     interface-peer {eth0 n6}
 }
@@ -598,8 +598,8 @@ node n29 {
 	 ipv6 address 2001:39::1/64
 	!
     }
-    iconcoords {3971.0 390.0}
-    labelcoords {3971.0 418.0}
+    iconcoords {3695.0 526.0}
+    labelcoords {3695.0 554.0}
     canvas c1
     interface-peer {eth0 n3}
 }
@@ -615,8 +615,8 @@ node n52 {
 	 ipv6 address 2001:33::1/64
 	!
     }
-    iconcoords {643.0 1032.0}
-    labelcoords {643.0 1060.0}
+    iconcoords {651.0 1052.0}
+    labelcoords {651.0 1080.0}
     canvas c1
     interface-peer {eth0 n1}
 }
@@ -632,8 +632,8 @@ node n53 {
 	 ipv6 address 2001:43::1/64
 	!
     }
-    iconcoords {3293.0 1816.0}
-    labelcoords {3293.0 1844.0}
+    iconcoords {3377.0 2160.0}
+    labelcoords {3377.0 2188.0}
     canvas c1
     interface-peer {eth0 n6}
 }
@@ -666,8 +666,8 @@ node n55 {
 	 ipv6 address 2001:28::1/64
 	!
     }
-    iconcoords {1754.0 794.0}
-    labelcoords {1754.0 822.0}
+    iconcoords {1590.0 774.0}
+    labelcoords {1590.0 802.0}
     canvas c1
     interface-peer {eth0 n2}
 }
@@ -683,8 +683,8 @@ node n57 {
 	 ipv6 address 2001:46::1/64
 	!
     }
-    iconcoords {4208.0 2679.0}
-    labelcoords {4208.0 2707.0}
+    iconcoords {3728.0 2699.0}
+    labelcoords {3728.0 2727.0}
     canvas c1
     interface-peer {eth0 n6}
 }
@@ -701,8 +701,8 @@ node n8 {
 	!
     }
     canvas c1
-    iconcoords {1492.0 1508.0}
-    labelcoords {1492.0 1540.0}
+    iconcoords {1128.0 1096.0}
+    labelcoords {1128.0 1128.0}
     interface-peer {eth0 n2}
 }
 
@@ -735,8 +735,8 @@ node n12 {
 	!
     }
     canvas c1
-    iconcoords {1578.0 506.0}
-    labelcoords {1578.0 538.0}
+    iconcoords {1406.0 238.0}
+    labelcoords {1406.0 270.0}
     interface-peer {eth0 n2}
 }
 
@@ -769,8 +769,8 @@ node n13 {
 	!
     }
     canvas c1
-    iconcoords {332.0 1232.0}
-    labelcoords {332.0 1264.0}
+    iconcoords {572.0 964.0}
+    labelcoords {572.0 996.0}
     interface-peer {eth0 n1}
 }
 
@@ -803,8 +803,8 @@ node n17 {
 	!
     }
     canvas c1
-    iconcoords {1180.0 460.0}
-    labelcoords {1180.0 492.0}
+    iconcoords {1084.0 548.0}
+    labelcoords {1084.0 580.0}
     interface-peer {eth0 n2}
 }
 
@@ -820,8 +820,8 @@ node n20 {
 	!
     }
     canvas c1
-    iconcoords {1316.0 1052.0}
-    labelcoords {1316.0 1084.0}
+    iconcoords {1252.0 984.0}
+    labelcoords {1252.0 1016.0}
     interface-peer {eth0 n2}
 }
 
@@ -837,8 +837,8 @@ node n27 {
 	!
     }
     canvas c1
-    iconcoords {804.0 1332.0}
-    labelcoords {804.0 1364.0}
+    iconcoords {816.0 1072.0}
+    labelcoords {816.0 1104.0}
     interface-peer {eth0 n1}
 }
 
@@ -901,7 +901,7 @@ link l17 {
 link l151 {
     color Green
     nodes {n4 n143}
-    delay 2000
+    delay 1000
     delay 200
     bandwidth 0
 }
@@ -909,7 +909,7 @@ link l151 {
 link l152 {
     color Green
     nodes {n4 n144}
-    delay 2000
+    delay 1000
     delay 200
     bandwidth 0
 }
@@ -925,7 +925,7 @@ link l156 {
 link l159 {
     color Green
     nodes {n6 n158}
-    delay 2000
+    delay 1000
     delay 200
     bandwidth 0
 }
@@ -933,7 +933,7 @@ link l159 {
 link l166 {
     color Green
     nodes {n3 n165}
-    delay 2500
+    delay 1500
     delay 200
     bandwidth 0
 }
@@ -941,7 +941,7 @@ link l166 {
 link l167 {
     color Green
     nodes {n4 n145}
-    delay 2500
+    delay 1000
     delay 200
     bandwidth 0
 }
@@ -949,7 +949,7 @@ link l167 {
 link l168 {
     color Green
     nodes {n4 n146}
-    delay 3000
+    delay 1500
     delay 200
     bandwidth 0
 }
@@ -973,7 +973,7 @@ link l170 {
 link l173 {
     color Green
     nodes {n1 n173}
-    delay 2000
+    delay 1000
     delay 200
     bandwidth 0
 }
@@ -989,7 +989,7 @@ link l176 {
 link l178 {
     color Green
     nodes {n182 n2}
-    delay 2000
+    delay 1000
     delay 200
     bandwidth 0
 }
@@ -1038,35 +1038,35 @@ link l34 {
 
 link l36 {
     color Green
-    delay 2000
+    delay 1000
     nodes {n11 n3}
     bandwidth 0
 }
 
 link l40 {
     color Green
-    delay 2500
+    delay 1500
     nodes {n29 n3}
     bandwidth 0
 }
 
 link l44 {
     color Green
-    delay 2000
+    delay 1500
     nodes {n53 n6}
     bandwidth 0
 }
 
 link l46 {
     color Green
-    delay 1000
+    delay 500
     nodes {n23 n6}
     bandwidth 0
 }
 
 link l47 {
     color Green
-    delay 2000
+    delay 1000
     nodes {n57 n6}
     bandwidth 0
 }
@@ -1094,7 +1094,7 @@ link l22 {
 
 link l30 {
     color Green
-    delay 2000
+    delay 1000
     nodes {n8 n2}
     bandwidth 0
 }
